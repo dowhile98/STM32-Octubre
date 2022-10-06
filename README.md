@@ -1,4 +1,4 @@
-# ESPECIALIZACION_ARM_Julio
+# ESPECIALIZACION_ARM_OCTUBRE
 Curso de especialización en Microcontroladores ARM-Cortex M
 <img src="https://www.st.com/bin/ecommerce/api/image.PF266995.en.feature-description-include-personalized-no-cpn-medium.jpg">
 
