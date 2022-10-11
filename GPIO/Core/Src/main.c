@@ -19,8 +19,6 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "stm32f4xx.h"
-#include "delay.h"
-#include "defines.h"
 /*Macro defines --------------------------------------------------*/
 /**
  * @brief para seleccionar el medio de transmision para el printf
@@ -29,34 +27,40 @@
  */
 #define USE_SW0			1
 
-/**
- * GPIOA_ODR_OFFSET = 0x20000
- * 0x40000000U
- * 0x42000000U
- * bit_word_offset = 0x20000 * 32 + 5 * 4
- * bit_word_address = 0x42000000 + 0x400014 = 0x42400014
- */
-#define ODR5 	*((volatile uint32_t*)(0x42400014))
+#define LED				5			//PA5
+#define SW				13			//PC13
 /*Global variables -----------------------------------------------*/
 
 /*Function prototypes --------------------------------------------*/
 
-
+uint8_t sw;
 
 int main(void)
 {
-	RCC->AHB1ENR |= GPIOX_CLOCK(LED);
-	GPIOX_MODER(MODE_OUT, LED);
-	//delay init
-	delay_init();
+	//HABILITAR EL RELOJ
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN | RCC_AHB1ENR_GPIOCEN;
+	//MODER
+	//PC13->ENTRADA
+	GPIOC->MODER &=~ (GPIO_MODER_MODE13); 		//MODO ENTRADA
+//	GPIOC->PUPDR &=~ (GPIO_PUPDR_PUPD13);		//RESET
+//	GPIOC->PUPDR |= GPIO_PUPDR_PUPD13_0;		//PULL UP
+	//PA5->SALIDA
+	GPIOA->MODER &=~ (GPIO_MODER_MODE5);
+	GPIOA->MODER |= GPIO_MODER_MODE5_0;			//SALIDA
+	GPIOA->OTYPER &=~ GPIO_OTYPER_OT5;			//PUSH PULL
+	GPIOA->OSPEEDR |= GPIO_OSPEEDR_OSPEED5;		//VERY HIGH SPEED
+	GPIOA->PUPDR &=~ GPIO_PUPDR_PUPD5;			//NO PULL UP / DOWN
     /* Loop forever */
 	for(;;){
-		//ODR5 = 1;
-		GPIOX_ODR(LED) = 1;
-		delay_ms(50);
-		//ODR5 = 0;
-		GPIOX_ODR(LED) = 0;
-		delay_ms(50);
+		sw = GPIOC->IDR>>13 & 0x1;
+		if(sw == 0){							//PRESED
+			while(!(GPIOC->IDR & 0x1<<13));    	//RELEASED
+			GPIOA->ODR |= 1U<<5;
+			//GPIOA->BSRR |= 1U<<5;
+		}else{
+			GPIOA->ODR &=~ (1U<<5);
+			//GPIOA->BSRR |= 1U<<(16+5);
+		}
 	}
 }
 /*Function definition ------------------------------------------------*/

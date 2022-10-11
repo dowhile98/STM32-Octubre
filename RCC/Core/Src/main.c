@@ -15,40 +15,51 @@
  *
  ******************************************************************************
  */
-/*Includes -------------------------------------------------------*/
+/*Includes--------------------------------------------------------------------*/
 #include <stdint.h>
-#include <stdio.h>
-#include "stm32f4xx.h"
-/*Macro defines --------------------------------------------------*/
+#include <stm32f4xx.h>
+
+/*Function prototype----------------------------------------------------------*/
 /**
- * @brief para seleccionar el medio de transmision para el printf
- * 0: USART
- * 1: SW0
+ * @brief funcion que selecciona el HSI como fuente para el SYSCLK
  */
-#define USE_SW0			1
-/*Global variables -----------------------------------------------*/
-
-/*Function prototypes --------------------------------------------*/
-
-
+void HSI_Sysclk(void);
+/**
+ * @brief funcion que selecciona el HSE como fuente para el SYSCLK
+ */
+void HSE_Sysclk(void);
 
 int main(void)
 {
-	printf("hola mundo\r\n");
+	HSI_Sysclk();
+	HSE_Sysclk();
     /* Loop forever */
-	for(;;){
-
-	}
+	for(;;);
 }
-/*Function definition ------------------------------------------------*/
-/**********************************************************************/
+/*Function definition ----------------------------------------------------------*/
+/**
+ * @brief funcion que selecciona el HSI como fuente para el SYSCLK
+ */
+void HSI_Sysclk(void){
+	/*habilitar el HSI*/
+	RCC->CR |= RCC_CR_HSION;
+	/*Esperar que este listo*/
+	while(!(RCC->CR & RCC_CR_HSIRDY));
+	/*Seleccionar el HSI como fuente de reloj del SYSCLK*/
+	RCC->CFGR &=~ (RCC_CFGR_SW);
+	while(RCC->CFGR & RCC_CFGR_SWS);
 
-int __io_putchar(int ch){
-#if (USE_SW0 == 1)
-	ITM_SendChar(ch);
-#else
-	//todo
-
-#endif
-	return ch;
+	SystemCoreClockUpdate();
+}
+/**
+ * @brief funcion que selecciona el HSE como fuente para el SYSCLK
+ */
+void HSE_Sysclk(void){
+	/*habilitar el HSE*/
+	RCC->CR |= RCC_CR_HSEON | RCC_CR_HSEBYP;
+	while(!(RCC->CR & RCC_CR_HSERDY));
+	/*Se selecciona el HSE COMO FUENTE DE RELOJ DEL SISTEMA*/
+	RCC->CFGR = RCC_CFGR_SW_HSE;				//Se selecciona el HSE Como fuente sysclk
+	while(!(RCC->CFGR & RCC_CFGR_SWS_HSE));		//se espera que se haga el cambio
+	SystemCoreClockUpdate();
 }
