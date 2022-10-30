@@ -1,0 +1,65 @@
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cci54JAy.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32f4xx_hal_flash_ramfunc.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              	.Letext0:
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cci54JAy.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f4xx_hal_flash_ramfunc.c
+                           .group:00000000 wm4.0.6722974c600fbadb77c15f77e4aec733
+                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.35126143d051d0f8985c9784cb41237c
+                           .group:00000000 wm4.stm32f4xx.h.38.48e9021f52d9734251440390770110f2
+                           .group:00000000 wm4.stm32f407xx.h.34.dfd2ea1697b5c77f46734fce8e0379c1
+                           .group:00000000 wm4._newlib_version.h.4.bfdf54b0af045d4a71376ae00f63a22c
+                           .group:00000000 wm4.features.h.33.318b64d71e0957639cfb30f1db1f7ec8
+                           .group:00000000 wm4._default_types.h.15.247e5cd201eca3442cbf5404108c4935
+                           .group:00000000 wm4._intsup.h.10.48bafbb683905c4daa4565a85aeeb264
+                           .group:00000000 wm4._stdint.h.10.c24fa3af3bc1706662bb5593a907e841
+                           .group:00000000 wm4.stdint.h.23.d53047a68f4a85177f80b422d52785ed
+                           .group:00000000 wm4.cmsis_version.h.32.4d5822004c01a829a975260e854b5f8e
+                           .group:00000000 wm4.core_cm4.h.66.e4ff136c4a17abc46741866f64f8e729
+                           .group:00000000 wm4.cmsis_gcc.h.26.6774fe91202d65f4d5ffcff60e00da34
+                           .group:00000000 wm4.core_cm4.h.174.059a5e001a9e729091d1407208e93224
+                           .group:00000000 wm4.mpu_armv7.h.32.27b4593cb2f8d3152ca5d97a9d72b321
+                           .group:00000000 wm4.stm32f407xx.h.906.0474e04c16c0cfa925d4d78494071749
+                           .group:00000000 wm4.stm32f4xx.h.195.a4b8bf80f37cc96981498656ffe5f588
+                           .group:00000000 wm4.stm32_hal_legacy.h.22.16ac1c418fa4dbc5e3fa712b7954601d
+                           .group:00000000 wm4.stddef.h.39.144cf5ddcd53cbfdac30259dc1a6c87f
+                           .group:00000000 wm4.stm32f4xx_hal_def.h.57.08cefe86ac52645939452d3df17ef4ab
+                           .group:00000000 wm4.stm32f4xx_hal_rcc_ex.h.20.3a57c1e6c9a9d48a187a3a3a11687a8a
+                           .group:00000000 wm4.stm32f4xx_hal_rcc.h.106.efc7276f0b34068dad95193cb2745b4a
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.21.22da6a14b6049d6ac156577be74df1d7
+                           .group:00000000 wm4.stm32f4xx_hal_gpio_ex.h.21.5c361dc23c602df6957f759e97bb04e8
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.254.d7e07832f748fe8bcb575db0b8373592
+                           .group:00000000 wm4.stm32f4xx_hal_exti.h.21.2e6a083d2f10670d92690e210e558965
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.21.8e4b1421c914345c23be719e5e528779
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.720.ac2d7eef74792e4026acc4d2923c5da4
+                           .group:00000000 wm4.stm32f4xx_hal_cortex.h.20.35bca41bd8e7fdf2164fd386295d19d4
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.20.ec5bcab1c918231d2275f2879d222ca1
+                           .group:00000000 wm4.stm32f4xx_hal_flash_ex.h.20.afe8d377ee912b60be4308c043f975e7
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.361.23bc19b9eac79b0956d913651841ede8
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.20.96af40923f190046b04fc753bf405f9a
+                           .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.6b992e55c4d669f613af1cd1aee9dd45
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.335.bdc222fbfcdafd1f2a1445d8f514a6a1
+                           .group:00000000 wm4.stm32f4xx_hal.h.71.3d2372f37daccf74f8a3fdda314d6583
+
+NO UNDEFINED SYMBOLS

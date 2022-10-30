@@ -1,0 +1,222 @@
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"gpio.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.MX_GPIO_Init,"ax",%progbits
+  20              		.align	1
+  21              		.global	MX_GPIO_Init
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	MX_GPIO_Init:
+  27              	.LFB130:
+  28              		.file 1 "Core/Src/gpio.c"
+   1:Core/Src/gpio.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/gpio.c **** /**
+   3:Core/Src/gpio.c ****   ******************************************************************************
+   4:Core/Src/gpio.c ****   * @file    gpio.c
+   5:Core/Src/gpio.c ****   * @brief   This file provides code for the configuration
+   6:Core/Src/gpio.c ****   *          of all used GPIO pins.
+   7:Core/Src/gpio.c ****   ******************************************************************************
+   8:Core/Src/gpio.c ****   * @attention
+   9:Core/Src/gpio.c ****   *
+  10:Core/Src/gpio.c ****   * Copyright (c) 2022 STMicroelectronics.
+  11:Core/Src/gpio.c ****   * All rights reserved.
+  12:Core/Src/gpio.c ****   *
+  13:Core/Src/gpio.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  14:Core/Src/gpio.c ****   * in the root directory of this software component.
+  15:Core/Src/gpio.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  16:Core/Src/gpio.c ****   *
+  17:Core/Src/gpio.c ****   ******************************************************************************
+  18:Core/Src/gpio.c ****   */
+  19:Core/Src/gpio.c **** /* USER CODE END Header */
+  20:Core/Src/gpio.c **** 
+  21:Core/Src/gpio.c **** /* Includes ------------------------------------------------------------------*/
+  22:Core/Src/gpio.c **** #include "gpio.h"
+  23:Core/Src/gpio.c **** 
+  24:Core/Src/gpio.c **** /* USER CODE BEGIN 0 */
+  25:Core/Src/gpio.c **** 
+  26:Core/Src/gpio.c **** /* USER CODE END 0 */
+  27:Core/Src/gpio.c **** 
+  28:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
+  29:Core/Src/gpio.c **** /* Configure GPIO                                                             */
+  30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 2
+
+
+  31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
+  32:Core/Src/gpio.c **** 
+  33:Core/Src/gpio.c **** /* USER CODE END 1 */
+  34:Core/Src/gpio.c **** 
+  35:Core/Src/gpio.c **** /** Configure pins
+  36:Core/Src/gpio.c **** */
+  37:Core/Src/gpio.c **** void MX_GPIO_Init(void)
+  38:Core/Src/gpio.c **** {
+  29              		.loc 1 38 1
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 24
+  32              		@ frame_needed = 1, uses_anonymous_args = 0
+  33 0000 80B5     		push	{r7, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 7, -8
+  37              		.cfi_offset 14, -4
+  38 0002 86B0     		sub	sp, sp, #24
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 32
+  41 0004 00AF     		add	r7, sp, #0
+  42              	.LCFI2:
+  43              		.cfi_def_cfa_register 7
+  39:Core/Src/gpio.c **** 
+  40:Core/Src/gpio.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
+  44              		.loc 1 40 20
+  45 0006 3B1D     		adds	r3, r7, #4
+  46 0008 0022     		movs	r2, #0
+  47 000a 1A60     		str	r2, [r3]
+  48 000c 5A60     		str	r2, [r3, #4]
+  49 000e 9A60     		str	r2, [r3, #8]
+  50 0010 DA60     		str	r2, [r3, #12]
+  51 0012 1A61     		str	r2, [r3, #16]
+  52              	.LBB2:
+  41:Core/Src/gpio.c **** 
+  42:Core/Src/gpio.c ****   /* GPIO Ports Clock Enable */
+  43:Core/Src/gpio.c ****   __HAL_RCC_GPIOD_CLK_ENABLE();
+  53              		.loc 1 43 3
+  54 0014 0023     		movs	r3, #0
+  55 0016 3B60     		str	r3, [r7]
+  56 0018 114B     		ldr	r3, .L2
+  57 001a 1B6B     		ldr	r3, [r3, #48]
+  58 001c 104A     		ldr	r2, .L2
+  59 001e 43F00803 		orr	r3, r3, #8
+  60 0022 1363     		str	r3, [r2, #48]
+  61 0024 0E4B     		ldr	r3, .L2
+  62 0026 1B6B     		ldr	r3, [r3, #48]
+  63 0028 03F00803 		and	r3, r3, #8
+  64 002c 3B60     		str	r3, [r7]
+  65 002e 3B68     		ldr	r3, [r7]
+  66              	.LBE2:
+  44:Core/Src/gpio.c **** 
+  45:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
+  46:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13, GPIO_PIN_RESET);
+  67              		.loc 1 46 3
+  68 0030 0022     		movs	r2, #0
+  69 0032 4FF44051 		mov	r1, #12288
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 3
+
+
+  70 0036 0B48     		ldr	r0, .L2+4
+  71 0038 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  47:Core/Src/gpio.c **** 
+  48:Core/Src/gpio.c ****   /*Configure GPIO pins : PD12 PD13 */
+  49:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13;
+  72              		.loc 1 49 23
+  73 003c 4FF44053 		mov	r3, #12288
+  74 0040 7B60     		str	r3, [r7, #4]
+  50:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  75              		.loc 1 50 24
+  76 0042 0123     		movs	r3, #1
+  77 0044 BB60     		str	r3, [r7, #8]
+  51:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
+  78              		.loc 1 51 24
+  79 0046 0023     		movs	r3, #0
+  80 0048 FB60     		str	r3, [r7, #12]
+  52:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  81              		.loc 1 52 25
+  82 004a 0023     		movs	r3, #0
+  83 004c 3B61     		str	r3, [r7, #16]
+  53:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+  84              		.loc 1 53 3
+  85 004e 3B1D     		adds	r3, r7, #4
+  86 0050 1946     		mov	r1, r3
+  87 0052 0448     		ldr	r0, .L2+4
+  88 0054 FFF7FEFF 		bl	HAL_GPIO_Init
+  54:Core/Src/gpio.c **** 
+  55:Core/Src/gpio.c **** }
+  89              		.loc 1 55 1
+  90 0058 00BF     		nop
+  91 005a 1837     		adds	r7, r7, #24
+  92              	.LCFI3:
+  93              		.cfi_def_cfa_offset 8
+  94 005c BD46     		mov	sp, r7
+  95              	.LCFI4:
+  96              		.cfi_def_cfa_register 13
+  97              		@ sp needed
+  98 005e 80BD     		pop	{r7, pc}
+  99              	.L3:
+ 100              		.align	2
+ 101              	.L2:
+ 102 0060 00380240 		.word	1073887232
+ 103 0064 000C0240 		.word	1073875968
+ 104              		.cfi_endproc
+ 105              	.LFE130:
+ 107              		.text
+ 108              	.Letext0:
+ 109              		.file 2 "c:\\arm-tools\\gcc-arm-none-eabi-10.3-2021.10\\arm-none-eabi\\include\\machine\\_default_
+ 110              		.file 3 "c:\\arm-tools\\gcc-arm-none-eabi-10.3-2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 111              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
+ 112              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 gpio.c
+C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s:20     .text.MX_GPIO_Init:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s:102    .text.MX_GPIO_Init:00000060 $d
+                           .group:00000000 wm4.0.6722974c600fbadb77c15f77e4aec733
+                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.35126143d051d0f8985c9784cb41237c
+                           .group:00000000 wm4.stm32f4xx.h.38.48e9021f52d9734251440390770110f2
+                           .group:00000000 wm4.stm32f407xx.h.34.dfd2ea1697b5c77f46734fce8e0379c1
+                           .group:00000000 wm4._newlib_version.h.4.bfdf54b0af045d4a71376ae00f63a22c
+                           .group:00000000 wm4.features.h.33.318b64d71e0957639cfb30f1db1f7ec8
+                           .group:00000000 wm4._default_types.h.15.247e5cd201eca3442cbf5404108c4935
+                           .group:00000000 wm4._intsup.h.10.48bafbb683905c4daa4565a85aeeb264
+                           .group:00000000 wm4._stdint.h.10.c24fa3af3bc1706662bb5593a907e841
+                           .group:00000000 wm4.stdint.h.23.d53047a68f4a85177f80b422d52785ed
+                           .group:00000000 wm4.cmsis_version.h.32.4d5822004c01a829a975260e854b5f8e
+                           .group:00000000 wm4.core_cm4.h.66.e4ff136c4a17abc46741866f64f8e729
+                           .group:00000000 wm4.cmsis_gcc.h.26.6774fe91202d65f4d5ffcff60e00da34
+                           .group:00000000 wm4.core_cm4.h.174.059a5e001a9e729091d1407208e93224
+                           .group:00000000 wm4.mpu_armv7.h.32.27b4593cb2f8d3152ca5d97a9d72b321
+                           .group:00000000 wm4.stm32f407xx.h.906.0474e04c16c0cfa925d4d78494071749
+                           .group:00000000 wm4.stm32f4xx.h.195.a4b8bf80f37cc96981498656ffe5f588
+                           .group:00000000 wm4.stm32_hal_legacy.h.22.16ac1c418fa4dbc5e3fa712b7954601d
+                           .group:00000000 wm4.stddef.h.39.144cf5ddcd53cbfdac30259dc1a6c87f
+                           .group:00000000 wm4.stm32f4xx_hal_def.h.57.08cefe86ac52645939452d3df17ef4ab
+                           .group:00000000 wm4.stm32f4xx_hal_rcc_ex.h.20.3a57c1e6c9a9d48a187a3a3a11687a8a
+                           .group:00000000 wm4.stm32f4xx_hal_rcc.h.106.efc7276f0b34068dad95193cb2745b4a
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.21.22da6a14b6049d6ac156577be74df1d7
+                           .group:00000000 wm4.stm32f4xx_hal_gpio_ex.h.21.5c361dc23c602df6957f759e97bb04e8
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.254.d7e07832f748fe8bcb575db0b8373592
+                           .group:00000000 wm4.stm32f4xx_hal_exti.h.21.2e6a083d2f10670d92690e210e558965
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.21.8e4b1421c914345c23be719e5e528779
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.720.ac2d7eef74792e4026acc4d2923c5da4
+                           .group:00000000 wm4.stm32f4xx_hal_cortex.h.20.35bca41bd8e7fdf2164fd386295d19d4
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.20.ec5bcab1c918231d2275f2879d222ca1
+                           .group:00000000 wm4.stm32f4xx_hal_flash_ex.h.20.afe8d377ee912b60be4308c043f975e7
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.361.23bc19b9eac79b0956d913651841ede8
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.20.96af40923f190046b04fc753bf405f9a
+                           .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.6b992e55c4d669f613af1cd1aee9dd45
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.335.bdc222fbfcdafd1f2a1445d8f514a6a1
+                           .group:00000000 wm4.stm32f4xx_hal.h.71.3d2372f37daccf74f8a3fdda314d6583
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_GPIO_Init

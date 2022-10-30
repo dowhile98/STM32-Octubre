@@ -1,0 +1,556 @@
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32f4xx_it.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.NMI_Handler,"ax",%progbits
+  20              		.align	1
+  21              		.global	NMI_Handler
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	NMI_Handler:
+  27              	.LFB130:
+  28              		.file 1 "Core/Src/stm32f4xx_it.c"
+   1:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/stm32f4xx_it.c **** /**
+   3:Core/Src/stm32f4xx_it.c ****   ******************************************************************************
+   4:Core/Src/stm32f4xx_it.c ****   * @file    stm32f4xx_it.c
+   5:Core/Src/stm32f4xx_it.c ****   * @brief   Interrupt Service Routines.
+   6:Core/Src/stm32f4xx_it.c ****   ******************************************************************************
+   7:Core/Src/stm32f4xx_it.c ****   * @attention
+   8:Core/Src/stm32f4xx_it.c ****   *
+   9:Core/Src/stm32f4xx_it.c ****   * Copyright (c) 2022 STMicroelectronics.
+  10:Core/Src/stm32f4xx_it.c ****   * All rights reserved.
+  11:Core/Src/stm32f4xx_it.c ****   *
+  12:Core/Src/stm32f4xx_it.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  13:Core/Src/stm32f4xx_it.c ****   * in the root directory of this software component.
+  14:Core/Src/stm32f4xx_it.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  15:Core/Src/stm32f4xx_it.c ****   *
+  16:Core/Src/stm32f4xx_it.c ****   ******************************************************************************
+  17:Core/Src/stm32f4xx_it.c ****   */
+  18:Core/Src/stm32f4xx_it.c **** /* USER CODE END Header */
+  19:Core/Src/stm32f4xx_it.c **** 
+  20:Core/Src/stm32f4xx_it.c **** /* Includes ------------------------------------------------------------------*/
+  21:Core/Src/stm32f4xx_it.c **** #include "main.h"
+  22:Core/Src/stm32f4xx_it.c **** #include "stm32f4xx_it.h"
+  23:Core/Src/stm32f4xx_it.c **** /* Private includes ----------------------------------------------------------*/
+  24:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN Includes */
+  25:Core/Src/stm32f4xx_it.c **** /* USER CODE END Includes */
+  26:Core/Src/stm32f4xx_it.c **** 
+  27:Core/Src/stm32f4xx_it.c **** /* Private typedef -----------------------------------------------------------*/
+  28:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN TD */
+  29:Core/Src/stm32f4xx_it.c **** 
+  30:Core/Src/stm32f4xx_it.c **** /* USER CODE END TD */
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 2
+
+
+  31:Core/Src/stm32f4xx_it.c **** 
+  32:Core/Src/stm32f4xx_it.c **** /* Private define ------------------------------------------------------------*/
+  33:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN PD */
+  34:Core/Src/stm32f4xx_it.c **** 
+  35:Core/Src/stm32f4xx_it.c **** /* USER CODE END PD */
+  36:Core/Src/stm32f4xx_it.c **** 
+  37:Core/Src/stm32f4xx_it.c **** /* Private macro -------------------------------------------------------------*/
+  38:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN PM */
+  39:Core/Src/stm32f4xx_it.c **** 
+  40:Core/Src/stm32f4xx_it.c **** /* USER CODE END PM */
+  41:Core/Src/stm32f4xx_it.c **** 
+  42:Core/Src/stm32f4xx_it.c **** /* Private variables ---------------------------------------------------------*/
+  43:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN PV */
+  44:Core/Src/stm32f4xx_it.c **** 
+  45:Core/Src/stm32f4xx_it.c **** /* USER CODE END PV */
+  46:Core/Src/stm32f4xx_it.c **** 
+  47:Core/Src/stm32f4xx_it.c **** /* Private function prototypes -----------------------------------------------*/
+  48:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN PFP */
+  49:Core/Src/stm32f4xx_it.c **** 
+  50:Core/Src/stm32f4xx_it.c **** /* USER CODE END PFP */
+  51:Core/Src/stm32f4xx_it.c **** 
+  52:Core/Src/stm32f4xx_it.c **** /* Private user code ---------------------------------------------------------*/
+  53:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN 0 */
+  54:Core/Src/stm32f4xx_it.c **** 
+  55:Core/Src/stm32f4xx_it.c **** /* USER CODE END 0 */
+  56:Core/Src/stm32f4xx_it.c **** 
+  57:Core/Src/stm32f4xx_it.c **** /* External variables --------------------------------------------------------*/
+  58:Core/Src/stm32f4xx_it.c **** 
+  59:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN EV */
+  60:Core/Src/stm32f4xx_it.c **** 
+  61:Core/Src/stm32f4xx_it.c **** /* USER CODE END EV */
+  62:Core/Src/stm32f4xx_it.c **** 
+  63:Core/Src/stm32f4xx_it.c **** /******************************************************************************/
+  64:Core/Src/stm32f4xx_it.c **** /*           Cortex-M4 Processor Interruption and Exception Handlers          */
+  65:Core/Src/stm32f4xx_it.c **** /******************************************************************************/
+  66:Core/Src/stm32f4xx_it.c **** /**
+  67:Core/Src/stm32f4xx_it.c ****   * @brief This function handles Non maskable interrupt.
+  68:Core/Src/stm32f4xx_it.c ****   */
+  69:Core/Src/stm32f4xx_it.c **** void NMI_Handler(void)
+  70:Core/Src/stm32f4xx_it.c **** {
+  29              		.loc 1 70 1
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 1, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34 0000 80B4     		push	{r7}
+  35              	.LCFI0:
+  36              		.cfi_def_cfa_offset 4
+  37              		.cfi_offset 7, -4
+  38 0002 00AF     		add	r7, sp, #0
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_register 7
+  41              	.L2:
+  71:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
+  72:Core/Src/stm32f4xx_it.c **** 
+  73:Core/Src/stm32f4xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 0 */
+  74:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 3
+
+
+  75:Core/Src/stm32f4xx_it.c ****   while (1)
+  42              		.loc 1 75 9 discriminator 1
+  43 0004 FEE7     		b	.L2
+  44              		.cfi_endproc
+  45              	.LFE130:
+  47              		.section	.text.HardFault_Handler,"ax",%progbits
+  48              		.align	1
+  49              		.global	HardFault_Handler
+  50              		.syntax unified
+  51              		.thumb
+  52              		.thumb_func
+  54              	HardFault_Handler:
+  55              	.LFB131:
+  76:Core/Src/stm32f4xx_it.c ****   {
+  77:Core/Src/stm32f4xx_it.c ****   }
+  78:Core/Src/stm32f4xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 1 */
+  79:Core/Src/stm32f4xx_it.c **** }
+  80:Core/Src/stm32f4xx_it.c **** 
+  81:Core/Src/stm32f4xx_it.c **** /**
+  82:Core/Src/stm32f4xx_it.c ****   * @brief This function handles Hard fault interrupt.
+  83:Core/Src/stm32f4xx_it.c ****   */
+  84:Core/Src/stm32f4xx_it.c **** void HardFault_Handler(void)
+  85:Core/Src/stm32f4xx_it.c **** {
+  56              		.loc 1 85 1
+  57              		.cfi_startproc
+  58              		@ args = 0, pretend = 0, frame = 0
+  59              		@ frame_needed = 1, uses_anonymous_args = 0
+  60              		@ link register save eliminated.
+  61 0000 80B4     		push	{r7}
+  62              	.LCFI2:
+  63              		.cfi_def_cfa_offset 4
+  64              		.cfi_offset 7, -4
+  65 0002 00AF     		add	r7, sp, #0
+  66              	.LCFI3:
+  67              		.cfi_def_cfa_register 7
+  68              	.L4:
+  86:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN HardFault_IRQn 0 */
+  87:Core/Src/stm32f4xx_it.c **** 
+  88:Core/Src/stm32f4xx_it.c ****   /* USER CODE END HardFault_IRQn 0 */
+  89:Core/Src/stm32f4xx_it.c ****   while (1)
+  69              		.loc 1 89 9 discriminator 1
+  70 0004 FEE7     		b	.L4
+  71              		.cfi_endproc
+  72              	.LFE131:
+  74              		.section	.text.MemManage_Handler,"ax",%progbits
+  75              		.align	1
+  76              		.global	MemManage_Handler
+  77              		.syntax unified
+  78              		.thumb
+  79              		.thumb_func
+  81              	MemManage_Handler:
+  82              	.LFB132:
+  90:Core/Src/stm32f4xx_it.c ****   {
+  91:Core/Src/stm32f4xx_it.c ****     /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+  92:Core/Src/stm32f4xx_it.c ****     /* USER CODE END W1_HardFault_IRQn 0 */
+  93:Core/Src/stm32f4xx_it.c ****   }
+  94:Core/Src/stm32f4xx_it.c **** }
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 4
+
+
+  95:Core/Src/stm32f4xx_it.c **** 
+  96:Core/Src/stm32f4xx_it.c **** /**
+  97:Core/Src/stm32f4xx_it.c ****   * @brief This function handles Memory management fault.
+  98:Core/Src/stm32f4xx_it.c ****   */
+  99:Core/Src/stm32f4xx_it.c **** void MemManage_Handler(void)
+ 100:Core/Src/stm32f4xx_it.c **** {
+  83              		.loc 1 100 1
+  84              		.cfi_startproc
+  85              		@ args = 0, pretend = 0, frame = 0
+  86              		@ frame_needed = 1, uses_anonymous_args = 0
+  87              		@ link register save eliminated.
+  88 0000 80B4     		push	{r7}
+  89              	.LCFI4:
+  90              		.cfi_def_cfa_offset 4
+  91              		.cfi_offset 7, -4
+  92 0002 00AF     		add	r7, sp, #0
+  93              	.LCFI5:
+  94              		.cfi_def_cfa_register 7
+  95              	.L6:
+ 101:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN MemoryManagement_IRQn 0 */
+ 102:Core/Src/stm32f4xx_it.c **** 
+ 103:Core/Src/stm32f4xx_it.c ****   /* USER CODE END MemoryManagement_IRQn 0 */
+ 104:Core/Src/stm32f4xx_it.c ****   while (1)
+  96              		.loc 1 104 9 discriminator 1
+  97 0004 FEE7     		b	.L6
+  98              		.cfi_endproc
+  99              	.LFE132:
+ 101              		.section	.text.BusFault_Handler,"ax",%progbits
+ 102              		.align	1
+ 103              		.global	BusFault_Handler
+ 104              		.syntax unified
+ 105              		.thumb
+ 106              		.thumb_func
+ 108              	BusFault_Handler:
+ 109              	.LFB133:
+ 105:Core/Src/stm32f4xx_it.c ****   {
+ 106:Core/Src/stm32f4xx_it.c ****     /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
+ 107:Core/Src/stm32f4xx_it.c ****     /* USER CODE END W1_MemoryManagement_IRQn 0 */
+ 108:Core/Src/stm32f4xx_it.c ****   }
+ 109:Core/Src/stm32f4xx_it.c **** }
+ 110:Core/Src/stm32f4xx_it.c **** 
+ 111:Core/Src/stm32f4xx_it.c **** /**
+ 112:Core/Src/stm32f4xx_it.c ****   * @brief This function handles Pre-fetch fault, memory access fault.
+ 113:Core/Src/stm32f4xx_it.c ****   */
+ 114:Core/Src/stm32f4xx_it.c **** void BusFault_Handler(void)
+ 115:Core/Src/stm32f4xx_it.c **** {
+ 110              		.loc 1 115 1
+ 111              		.cfi_startproc
+ 112              		@ args = 0, pretend = 0, frame = 0
+ 113              		@ frame_needed = 1, uses_anonymous_args = 0
+ 114              		@ link register save eliminated.
+ 115 0000 80B4     		push	{r7}
+ 116              	.LCFI6:
+ 117              		.cfi_def_cfa_offset 4
+ 118              		.cfi_offset 7, -4
+ 119 0002 00AF     		add	r7, sp, #0
+ 120              	.LCFI7:
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 5
+
+
+ 121              		.cfi_def_cfa_register 7
+ 122              	.L8:
+ 116:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN BusFault_IRQn 0 */
+ 117:Core/Src/stm32f4xx_it.c **** 
+ 118:Core/Src/stm32f4xx_it.c ****   /* USER CODE END BusFault_IRQn 0 */
+ 119:Core/Src/stm32f4xx_it.c ****   while (1)
+ 123              		.loc 1 119 9 discriminator 1
+ 124 0004 FEE7     		b	.L8
+ 125              		.cfi_endproc
+ 126              	.LFE133:
+ 128              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 129              		.align	1
+ 130              		.global	UsageFault_Handler
+ 131              		.syntax unified
+ 132              		.thumb
+ 133              		.thumb_func
+ 135              	UsageFault_Handler:
+ 136              	.LFB134:
+ 120:Core/Src/stm32f4xx_it.c ****   {
+ 121:Core/Src/stm32f4xx_it.c ****     /* USER CODE BEGIN W1_BusFault_IRQn 0 */
+ 122:Core/Src/stm32f4xx_it.c ****     /* USER CODE END W1_BusFault_IRQn 0 */
+ 123:Core/Src/stm32f4xx_it.c ****   }
+ 124:Core/Src/stm32f4xx_it.c **** }
+ 125:Core/Src/stm32f4xx_it.c **** 
+ 126:Core/Src/stm32f4xx_it.c **** /**
+ 127:Core/Src/stm32f4xx_it.c ****   * @brief This function handles Undefined instruction or illegal state.
+ 128:Core/Src/stm32f4xx_it.c ****   */
+ 129:Core/Src/stm32f4xx_it.c **** void UsageFault_Handler(void)
+ 130:Core/Src/stm32f4xx_it.c **** {
+ 137              		.loc 1 130 1
+ 138              		.cfi_startproc
+ 139              		@ args = 0, pretend = 0, frame = 0
+ 140              		@ frame_needed = 1, uses_anonymous_args = 0
+ 141              		@ link register save eliminated.
+ 142 0000 80B4     		push	{r7}
+ 143              	.LCFI8:
+ 144              		.cfi_def_cfa_offset 4
+ 145              		.cfi_offset 7, -4
+ 146 0002 00AF     		add	r7, sp, #0
+ 147              	.LCFI9:
+ 148              		.cfi_def_cfa_register 7
+ 149              	.L10:
+ 131:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN UsageFault_IRQn 0 */
+ 132:Core/Src/stm32f4xx_it.c **** 
+ 133:Core/Src/stm32f4xx_it.c ****   /* USER CODE END UsageFault_IRQn 0 */
+ 134:Core/Src/stm32f4xx_it.c ****   while (1)
+ 150              		.loc 1 134 9 discriminator 1
+ 151 0004 FEE7     		b	.L10
+ 152              		.cfi_endproc
+ 153              	.LFE134:
+ 155              		.section	.text.SVC_Handler,"ax",%progbits
+ 156              		.align	1
+ 157              		.global	SVC_Handler
+ 158              		.syntax unified
+ 159              		.thumb
+ 160              		.thumb_func
+ 162              	SVC_Handler:
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 6
+
+
+ 163              	.LFB135:
+ 135:Core/Src/stm32f4xx_it.c ****   {
+ 136:Core/Src/stm32f4xx_it.c ****     /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
+ 137:Core/Src/stm32f4xx_it.c ****     /* USER CODE END W1_UsageFault_IRQn 0 */
+ 138:Core/Src/stm32f4xx_it.c ****   }
+ 139:Core/Src/stm32f4xx_it.c **** }
+ 140:Core/Src/stm32f4xx_it.c **** 
+ 141:Core/Src/stm32f4xx_it.c **** /**
+ 142:Core/Src/stm32f4xx_it.c ****   * @brief This function handles System service call via SWI instruction.
+ 143:Core/Src/stm32f4xx_it.c ****   */
+ 144:Core/Src/stm32f4xx_it.c **** void SVC_Handler(void)
+ 145:Core/Src/stm32f4xx_it.c **** {
+ 164              		.loc 1 145 1
+ 165              		.cfi_startproc
+ 166              		@ args = 0, pretend = 0, frame = 0
+ 167              		@ frame_needed = 1, uses_anonymous_args = 0
+ 168              		@ link register save eliminated.
+ 169 0000 80B4     		push	{r7}
+ 170              	.LCFI10:
+ 171              		.cfi_def_cfa_offset 4
+ 172              		.cfi_offset 7, -4
+ 173 0002 00AF     		add	r7, sp, #0
+ 174              	.LCFI11:
+ 175              		.cfi_def_cfa_register 7
+ 146:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN SVCall_IRQn 0 */
+ 147:Core/Src/stm32f4xx_it.c **** 
+ 148:Core/Src/stm32f4xx_it.c ****   /* USER CODE END SVCall_IRQn 0 */
+ 149:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN SVCall_IRQn 1 */
+ 150:Core/Src/stm32f4xx_it.c **** 
+ 151:Core/Src/stm32f4xx_it.c ****   /* USER CODE END SVCall_IRQn 1 */
+ 152:Core/Src/stm32f4xx_it.c **** }
+ 176              		.loc 1 152 1
+ 177 0004 00BF     		nop
+ 178 0006 BD46     		mov	sp, r7
+ 179              	.LCFI12:
+ 180              		.cfi_def_cfa_register 13
+ 181              		@ sp needed
+ 182 0008 5DF8047B 		ldr	r7, [sp], #4
+ 183              	.LCFI13:
+ 184              		.cfi_restore 7
+ 185              		.cfi_def_cfa_offset 0
+ 186 000c 7047     		bx	lr
+ 187              		.cfi_endproc
+ 188              	.LFE135:
+ 190              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 191              		.align	1
+ 192              		.global	DebugMon_Handler
+ 193              		.syntax unified
+ 194              		.thumb
+ 195              		.thumb_func
+ 197              	DebugMon_Handler:
+ 198              	.LFB136:
+ 153:Core/Src/stm32f4xx_it.c **** 
+ 154:Core/Src/stm32f4xx_it.c **** /**
+ 155:Core/Src/stm32f4xx_it.c ****   * @brief This function handles Debug monitor.
+ 156:Core/Src/stm32f4xx_it.c ****   */
+ 157:Core/Src/stm32f4xx_it.c **** void DebugMon_Handler(void)
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 7
+
+
+ 158:Core/Src/stm32f4xx_it.c **** {
+ 199              		.loc 1 158 1
+ 200              		.cfi_startproc
+ 201              		@ args = 0, pretend = 0, frame = 0
+ 202              		@ frame_needed = 1, uses_anonymous_args = 0
+ 203              		@ link register save eliminated.
+ 204 0000 80B4     		push	{r7}
+ 205              	.LCFI14:
+ 206              		.cfi_def_cfa_offset 4
+ 207              		.cfi_offset 7, -4
+ 208 0002 00AF     		add	r7, sp, #0
+ 209              	.LCFI15:
+ 210              		.cfi_def_cfa_register 7
+ 159:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 0 */
+ 160:Core/Src/stm32f4xx_it.c **** 
+ 161:Core/Src/stm32f4xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 0 */
+ 162:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 1 */
+ 163:Core/Src/stm32f4xx_it.c **** 
+ 164:Core/Src/stm32f4xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 1 */
+ 165:Core/Src/stm32f4xx_it.c **** }
+ 211              		.loc 1 165 1
+ 212 0004 00BF     		nop
+ 213 0006 BD46     		mov	sp, r7
+ 214              	.LCFI16:
+ 215              		.cfi_def_cfa_register 13
+ 216              		@ sp needed
+ 217 0008 5DF8047B 		ldr	r7, [sp], #4
+ 218              	.LCFI17:
+ 219              		.cfi_restore 7
+ 220              		.cfi_def_cfa_offset 0
+ 221 000c 7047     		bx	lr
+ 222              		.cfi_endproc
+ 223              	.LFE136:
+ 225              		.section	.text.PendSV_Handler,"ax",%progbits
+ 226              		.align	1
+ 227              		.global	PendSV_Handler
+ 228              		.syntax unified
+ 229              		.thumb
+ 230              		.thumb_func
+ 232              	PendSV_Handler:
+ 233              	.LFB137:
+ 166:Core/Src/stm32f4xx_it.c **** 
+ 167:Core/Src/stm32f4xx_it.c **** /**
+ 168:Core/Src/stm32f4xx_it.c ****   * @brief This function handles Pendable request for system service.
+ 169:Core/Src/stm32f4xx_it.c ****   */
+ 170:Core/Src/stm32f4xx_it.c **** void PendSV_Handler(void)
+ 171:Core/Src/stm32f4xx_it.c **** {
+ 234              		.loc 1 171 1
+ 235              		.cfi_startproc
+ 236              		@ args = 0, pretend = 0, frame = 0
+ 237              		@ frame_needed = 1, uses_anonymous_args = 0
+ 238              		@ link register save eliminated.
+ 239 0000 80B4     		push	{r7}
+ 240              	.LCFI18:
+ 241              		.cfi_def_cfa_offset 4
+ 242              		.cfi_offset 7, -4
+ 243 0002 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 8
+
+
+ 244              	.LCFI19:
+ 245              		.cfi_def_cfa_register 7
+ 172:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN PendSV_IRQn 0 */
+ 173:Core/Src/stm32f4xx_it.c **** 
+ 174:Core/Src/stm32f4xx_it.c ****   /* USER CODE END PendSV_IRQn 0 */
+ 175:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN PendSV_IRQn 1 */
+ 176:Core/Src/stm32f4xx_it.c **** 
+ 177:Core/Src/stm32f4xx_it.c ****   /* USER CODE END PendSV_IRQn 1 */
+ 178:Core/Src/stm32f4xx_it.c **** }
+ 246              		.loc 1 178 1
+ 247 0004 00BF     		nop
+ 248 0006 BD46     		mov	sp, r7
+ 249              	.LCFI20:
+ 250              		.cfi_def_cfa_register 13
+ 251              		@ sp needed
+ 252 0008 5DF8047B 		ldr	r7, [sp], #4
+ 253              	.LCFI21:
+ 254              		.cfi_restore 7
+ 255              		.cfi_def_cfa_offset 0
+ 256 000c 7047     		bx	lr
+ 257              		.cfi_endproc
+ 258              	.LFE137:
+ 260              		.section	.text.SysTick_Handler,"ax",%progbits
+ 261              		.align	1
+ 262              		.global	SysTick_Handler
+ 263              		.syntax unified
+ 264              		.thumb
+ 265              		.thumb_func
+ 267              	SysTick_Handler:
+ 268              	.LFB138:
+ 179:Core/Src/stm32f4xx_it.c **** 
+ 180:Core/Src/stm32f4xx_it.c **** /**
+ 181:Core/Src/stm32f4xx_it.c ****   * @brief This function handles System tick timer.
+ 182:Core/Src/stm32f4xx_it.c ****   */
+ 183:Core/Src/stm32f4xx_it.c **** void SysTick_Handler(void)
+ 184:Core/Src/stm32f4xx_it.c **** {
+ 269              		.loc 1 184 1
+ 270              		.cfi_startproc
+ 271              		@ args = 0, pretend = 0, frame = 0
+ 272              		@ frame_needed = 1, uses_anonymous_args = 0
+ 273 0000 80B5     		push	{r7, lr}
+ 274              	.LCFI22:
+ 275              		.cfi_def_cfa_offset 8
+ 276              		.cfi_offset 7, -8
+ 277              		.cfi_offset 14, -4
+ 278 0002 00AF     		add	r7, sp, #0
+ 279              	.LCFI23:
+ 280              		.cfi_def_cfa_register 7
+ 185:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN SysTick_IRQn 0 */
+ 186:Core/Src/stm32f4xx_it.c **** 
+ 187:Core/Src/stm32f4xx_it.c ****   /* USER CODE END SysTick_IRQn 0 */
+ 188:Core/Src/stm32f4xx_it.c ****   HAL_IncTick();
+ 281              		.loc 1 188 3
+ 282 0004 FFF7FEFF 		bl	HAL_IncTick
+ 189:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN SysTick_IRQn 1 */
+ 190:Core/Src/stm32f4xx_it.c **** 
+ 191:Core/Src/stm32f4xx_it.c ****   /* USER CODE END SysTick_IRQn 1 */
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 9
+
+
+ 192:Core/Src/stm32f4xx_it.c **** }
+ 283              		.loc 1 192 1
+ 284 0008 00BF     		nop
+ 285 000a 80BD     		pop	{r7, pc}
+ 286              		.cfi_endproc
+ 287              	.LFE138:
+ 289              		.text
+ 290              	.Letext0:
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f4xx_it.c
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:20     .text.NMI_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:26     .text.NMI_Handler:00000000 NMI_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:48     .text.HardFault_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:54     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:75     .text.MemManage_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:81     .text.MemManage_Handler:00000000 MemManage_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:102    .text.BusFault_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:108    .text.BusFault_Handler:00000000 BusFault_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:129    .text.UsageFault_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:135    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:156    .text.SVC_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:162    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:191    .text.DebugMon_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:197    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:226    .text.PendSV_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:232    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:261    .text.SysTick_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s:267    .text.SysTick_Handler:00000000 SysTick_Handler
+                           .group:00000000 wm4.0.6722974c600fbadb77c15f77e4aec733
+                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.35126143d051d0f8985c9784cb41237c
+                           .group:00000000 wm4.stm32f4xx.h.38.48e9021f52d9734251440390770110f2
+                           .group:00000000 wm4.stm32f407xx.h.34.dfd2ea1697b5c77f46734fce8e0379c1
+                           .group:00000000 wm4._newlib_version.h.4.bfdf54b0af045d4a71376ae00f63a22c
+                           .group:00000000 wm4.features.h.33.318b64d71e0957639cfb30f1db1f7ec8
+                           .group:00000000 wm4._default_types.h.15.247e5cd201eca3442cbf5404108c4935
+                           .group:00000000 wm4._intsup.h.10.48bafbb683905c4daa4565a85aeeb264
+                           .group:00000000 wm4._stdint.h.10.c24fa3af3bc1706662bb5593a907e841
+                           .group:00000000 wm4.stdint.h.23.d53047a68f4a85177f80b422d52785ed
+                           .group:00000000 wm4.cmsis_version.h.32.4d5822004c01a829a975260e854b5f8e
+                           .group:00000000 wm4.core_cm4.h.66.e4ff136c4a17abc46741866f64f8e729
+                           .group:00000000 wm4.cmsis_gcc.h.26.6774fe91202d65f4d5ffcff60e00da34
+                           .group:00000000 wm4.core_cm4.h.174.059a5e001a9e729091d1407208e93224
+                           .group:00000000 wm4.mpu_armv7.h.32.27b4593cb2f8d3152ca5d97a9d72b321
+                           .group:00000000 wm4.stm32f407xx.h.906.0474e04c16c0cfa925d4d78494071749
+                           .group:00000000 wm4.stm32f4xx.h.195.a4b8bf80f37cc96981498656ffe5f588
+                           .group:00000000 wm4.stm32_hal_legacy.h.22.16ac1c418fa4dbc5e3fa712b7954601d
+                           .group:00000000 wm4.stddef.h.39.144cf5ddcd53cbfdac30259dc1a6c87f
+                           .group:00000000 wm4.stm32f4xx_hal_def.h.57.08cefe86ac52645939452d3df17ef4ab
+                           .group:00000000 wm4.stm32f4xx_hal_rcc_ex.h.20.3a57c1e6c9a9d48a187a3a3a11687a8a
+                           .group:00000000 wm4.stm32f4xx_hal_rcc.h.106.efc7276f0b34068dad95193cb2745b4a
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.21.22da6a14b6049d6ac156577be74df1d7
+                           .group:00000000 wm4.stm32f4xx_hal_gpio_ex.h.21.5c361dc23c602df6957f759e97bb04e8
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.254.d7e07832f748fe8bcb575db0b8373592
+                           .group:00000000 wm4.stm32f4xx_hal_exti.h.21.2e6a083d2f10670d92690e210e558965
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.21.8e4b1421c914345c23be719e5e528779
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.720.ac2d7eef74792e4026acc4d2923c5da4
+                           .group:00000000 wm4.stm32f4xx_hal_cortex.h.20.35bca41bd8e7fdf2164fd386295d19d4
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.20.ec5bcab1c918231d2275f2879d222ca1
+                           .group:00000000 wm4.stm32f4xx_hal_flash_ex.h.20.afe8d377ee912b60be4308c043f975e7
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.361.23bc19b9eac79b0956d913651841ede8
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.20.96af40923f190046b04fc753bf405f9a
+                           .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.6b992e55c4d669f613af1cd1aee9dd45
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.335.bdc222fbfcdafd1f2a1445d8f514a6a1
+                           .group:00000000 wm4.stm32f4xx_hal.h.71.3d2372f37daccf74f8a3fdda314d6583
+
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccuooHRi.s 			page 11
+
+
+UNDEFINED SYMBOLS
+HAL_IncTick
