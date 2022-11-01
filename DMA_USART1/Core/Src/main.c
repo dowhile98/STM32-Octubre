@@ -100,7 +100,7 @@ int main(void)
 	NVIC_EnableIRQ(DMA2_Stream7_IRQn);
 	//habilitar el estream
 
-	sprintf((char*)data_stream, "CONFIGURACION CORRECTA DEL DMA2\r\n");
+	sprintf((char*)data_stream, "CONFIGURACION CORRECTA DEL DMA2 stream7\r\n");
 	temp = strlen((char*)data_stream);
 	DMA2_Stream7->NDTR = temp;
 	DMA2_Stream7->CR |= DMA_SxCR_EN;
