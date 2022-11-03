@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   port bit of the General Purpose IO (GPIO) Ports, can be individually configured by software
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   in several modes:
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   (+) Input mode 
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 2
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 2
 
 
   31:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   (+) Analog mode
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****     (#) To set/reset the level of a pin configured in output mode use 
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         HAL_GPIO_WritePin()/HAL_GPIO_TogglePin().
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****     
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 3
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 3
 
 
   88:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****     (#) To lock pin configuration until next reset use HAL_GPIO_LockPin().
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *
  143:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** @verbatim    
  144:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****  ===============================================================================
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 4
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 4
 
 
  145:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****               ##### Initialization and de-initialization functions #####
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  173:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   assert_param(IS_GPIO_PIN(GPIO_Init->Pin));
  174:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   assert_param(IS_GPIO_MODE(GPIO_Init->Mode));
  175:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** 
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 5
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 5
 
 
  176:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   /* Configure the port pins */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
   94              	.L4:
  190:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****       {
  191:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         /* Check the Speed parameter */
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 6
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 6
 
 
  192:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         assert_param(IS_GPIO_SPEED(GPIO_Init->Speed));
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  139 0094 1340     		ands	r3, r3, r2
  140 0096 BB61     		str	r3, [r7, #24]
  202:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         temp |= (((GPIO_Init->Mode & OUTPUT_TYPE) >> OUTPUT_TYPE_Pos) << position);
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 7
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 7
 
 
  141              		.loc 1 202 29
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  183              		.loc 1 214 28
  184 00d8 3B68     		ldr	r3, [r7]
  185 00da 9A68     		ldr	r2, [r3, #8]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 8
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 8
 
 
  186              		.loc 1 214 49
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  229 011e BB61     		str	r3, [r7, #24]
  226:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         temp |= ((uint32_t)(GPIO_Init->Alternate) << (((uint32_t)position & 0x07U) * 4U));
  230              		.loc 1 226 38
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 9
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 9
 
 
  231 0120 3B68     		ldr	r3, [r7]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  278 0168 02FA03F3 		lsl	r3, r2, r3
  279              		.loc 1 233 12
  280 016c BA69     		ldr	r2, [r7, #24]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 10
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 10
 
 
  281 016e 1343     		orrs	r3, r3, r2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  324              		.loc 1 244 25
  325 01b8 0F22     		movs	r2, #15
  326 01ba 02FA03F3 		lsl	r3, r2, r3
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 11
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 11
 
 
  327              		.loc 1 244 17
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  380              	.L14:
  381              		.loc 1 245 29 discriminator 14
  382 020e 0623     		movs	r3, #6
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 12
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 12
 
 
  383 0210 0AE0     		b	.L23
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  250:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         temp &= ~((uint32_t)iocurrent);
  433              		.loc 1 250 17 discriminator 32
  434 024c 3B69     		ldr	r3, [r7, #16]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 13
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 13
 
 
  435 024e DB43     		mvns	r3, r3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  261:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****           temp |= iocurrent;
  479              		.loc 1 261 16
  480 028c BA69     		ldr	r2, [r7, #24]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 14
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 14
 
 
  481 028e 3B69     		ldr	r3, [r7, #16]
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  522 02c4 1B4B     		ldr	r3, .L29+40
  523              		.loc 1 274 14
  524 02c6 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 15
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 15
 
 
  525 02c8 BB61     		str	r3, [r7, #24]
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  567              		.cfi_def_cfa_offset 4
  568 0302 BD46     		mov	sp, r7
  569              	.LCFI4:
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 16
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 16
 
 
  570              		.cfi_def_cfa_register 13
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  615 0004 00AF     		add	r7, sp, #0
  616              	.LCFI8:
  617              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 17
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 17
 
 
  618 0006 7860     		str	r0, [r7, #4]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  652              		.loc 1 315 37
  653 003a 7B69     		ldr	r3, [r7, #20]
  654 003c 9B08     		lsrs	r3, r3, #2
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 18
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 18
 
 
  655              		.loc 1 315 11
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  707 0092 7B68     		ldr	r3, [r7, #4]
  708 0094 564A     		ldr	r2, .L52+32
  709 0096 9342     		cmp	r3, r2
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 19
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 19
 
 
  710 0098 01D1     		bne	.L41
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  761 00d0 FB68     		ldr	r3, [r7, #12]
  762 00d2 DB43     		mvns	r3, r3
  763              		.loc 1 320 19
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 20
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 20
 
 
  764 00d4 4749     		ldr	r1, .L52+36
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  809 0118 9B08     		lsrs	r3, r3, #2
  810 011a 0233     		adds	r3, r3, #2
  811 011c 52F82310 		ldr	r1, [r2, r3, lsl #2]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 21
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 21
 
 
  812              		.loc 1 329 43
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  858 016a 7B68     		ldr	r3, [r7, #4]
  859 016c 0832     		adds	r2, r2, #8
  860 016e 43F82210 		str	r1, [r3, r2, lsl #2]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 22
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 22
 
 
  338:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  905              		.loc 1 305 54 discriminator 2
  906 01b2 7B69     		ldr	r3, [r7, #20]
  907 01b4 0133     		adds	r3, r3, #1
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 23
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 23
 
 
  908 01b6 7B61     		str	r3, [r7, #20]
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  356:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *  @brief   GPIO Read and Write
  357:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *
  358:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** @verbatim
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 24
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 24
 
 
  359:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****  ===============================================================================
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  982 0018 0123     		movs	r3, #1
  983 001a FB73     		strb	r3, [r7, #15]
  984 001c 01E0     		b	.L56
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 25
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 25
 
 
  985              	.L55:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  408:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @retval None
  409:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   */
  410:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState)
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 26
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 26
 
 
  411:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** {
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  1055 0024 9A61     		str	r2, [r3, #24]
  1056              	.L61:
  1057              		.loc 1 424 1
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 27
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 27
 
 
  1058 0026 00BF     		nop
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  438:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   assert_param(IS_GPIO_PIN(GPIO_Pin));
  439:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** 
  440:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   /* get current Output Data Register value */
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 28
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 28
 
 
  441:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   odr = GPIOx->ODR;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  450:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *         GPIOx_PUPDR, GPIOx_AFRL and GPIOx_AFRH.
  451:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @note   The configuration of the locked GPIO pins can no longer be modified
  452:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *         until the next reset.
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 29
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 29
 
 
  453:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @param  GPIOx where x can be (A..F) to select the GPIO peripheral for STM32F4 family
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  1182              		.loc 1 472 15
  1183 0026 FA68     		ldr	r2, [r7, #12]
  1184 0028 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 30
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 30
 
 
  1185 002a DA61     		str	r2, [r3, #28]
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  1227              		.thumb
  1228              		.thumb_func
  1230              	HAL_GPIO_EXTI_IRQHandler:
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 31
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 31
 
 
  1231              	.LFB136:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  1270              		.cfi_def_cfa_offset 8
  1271 0028 BD46     		mov	sp, r7
  1272              	.LCFI40:
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 32
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 32
 
 
  1273              		.cfi_def_cfa_register 13
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  1315              	.LCFI45:
  1316              		.cfi_def_cfa_register 13
  1317              		@ sp needed
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 33
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 33
 
 
  1318 0010 5DF8047B 		ldr	r7, [sp], #4
@@ -1936,30 +1936,30 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 1
  1331              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
  1332              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  1333              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 34
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_gpio.c
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:20     .text.HAL_GPIO_Init:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:26     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:580    .text.HAL_GPIO_Init:0000030c $d
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:595    .text.HAL_GPIO_DeInit:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:601    .text.HAL_GPIO_DeInit:00000000 HAL_GPIO_DeInit
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:932    .text.HAL_GPIO_DeInit:000001d0 $d
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:946    .text.HAL_GPIO_ReadPin:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:952    .text.HAL_GPIO_ReadPin:00000000 HAL_GPIO_ReadPin
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1010   .text.HAL_GPIO_WritePin:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1016   .text.HAL_GPIO_WritePin:00000000 HAL_GPIO_WritePin
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1075   .text.HAL_GPIO_TogglePin:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1081   .text.HAL_GPIO_TogglePin:00000000 HAL_GPIO_TogglePin
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1140   .text.HAL_GPIO_LockPin:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1146   .text.HAL_GPIO_LockPin:00000000 HAL_GPIO_LockPin
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1224   .text.HAL_GPIO_EXTI_IRQHandler:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1230   .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1290   .text.HAL_GPIO_EXTI_Callback:00000000 HAL_GPIO_EXTI_Callback
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1279   .text.HAL_GPIO_EXTI_IRQHandler:0000002c $d
-C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1284   .text.HAL_GPIO_EXTI_Callback:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:20     .text.HAL_GPIO_Init:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:26     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:580    .text.HAL_GPIO_Init:0000030c $d
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:595    .text.HAL_GPIO_DeInit:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:601    .text.HAL_GPIO_DeInit:00000000 HAL_GPIO_DeInit
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:932    .text.HAL_GPIO_DeInit:000001d0 $d
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:946    .text.HAL_GPIO_ReadPin:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:952    .text.HAL_GPIO_ReadPin:00000000 HAL_GPIO_ReadPin
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1010   .text.HAL_GPIO_WritePin:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1016   .text.HAL_GPIO_WritePin:00000000 HAL_GPIO_WritePin
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1075   .text.HAL_GPIO_TogglePin:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1081   .text.HAL_GPIO_TogglePin:00000000 HAL_GPIO_TogglePin
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1140   .text.HAL_GPIO_LockPin:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1146   .text.HAL_GPIO_LockPin:00000000 HAL_GPIO_LockPin
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1224   .text.HAL_GPIO_EXTI_IRQHandler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1230   .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1290   .text.HAL_GPIO_EXTI_Callback:00000000 HAL_GPIO_EXTI_Callback
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1279   .text.HAL_GPIO_EXTI_IRQHandler:0000002c $d
+C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s:1284   .text.HAL_GPIO_EXTI_Callback:00000000 $t
                            .group:00000000 wm4.0.6722974c600fbadb77c15f77e4aec733
                            .group:00000000 wm4.stm32f4xx_hal_conf.h.25.35126143d051d0f8985c9784cb41237c
                            .group:00000000 wm4.stm32f4xx.h.38.48e9021f52d9734251440390770110f2
@@ -1996,7 +1996,7 @@ C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s:1284   .text.HAL_GPIO_EXTI_Callback
                            .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.6b992e55c4d669f613af1cd1aee9dd45
                            .group:00000000 wm4.stm32f4xx_hal_pwr.h.335.bdc222fbfcdafd1f2a1445d8f514a6a1
                            .group:00000000 wm4.stm32f4xx_hal.h.71.3d2372f37daccf74f8a3fdda314d6583
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cckcCG5B.s 			page 35
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\cc8pf52j.s 			page 35
 
 
 

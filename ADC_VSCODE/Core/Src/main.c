@@ -135,7 +135,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    GPIOD->ODR ^= 1U<<12   | 1u<<13;
+    GPIOD->ODR ^= 1U<<12   | 1u<<13 | 1<<14 | 1U<<15;
     HAL_Delay(100);
     ITM_Printf(1, "count->%lu\r\n",count);
     count += 10;

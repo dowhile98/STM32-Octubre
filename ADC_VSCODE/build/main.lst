@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
   28:Core/Src/main.c **** #include <math.h>
   29:Core/Src/main.c **** /* USER CODE END Includes */
   30:Core/Src/main.c **** 
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 2
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 2
 
 
   31:Core/Src/main.c **** /* Private typedef -----------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
   56 001e D3F8002E 		ldr	r2, [r3, #3584]
   57              		.loc 1 57 48 discriminator 1
   58 0022 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 3
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 3
 
 
   59 0024 22FA03F3 		lsr	r3, r2, r3
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  101              		.cfi_restore 7
  102              		.cfi_def_cfa_offset 0
  103 0058 7047     		bx	lr
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 4
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 4
 
 
  104              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
   74:Core/Src/main.c ****   for(uint8_t i = 0; i < strlen(str); i++){
  152              		.loc 1 74 15
  153 0024 0023     		movs	r3, #0
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 5
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 5
 
 
  154 0026 87F86330 		strb	r3, [r7, #99]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  198              		.cfi_restore 7
  199              		.cfi_restore 4
  200              		.cfi_def_cfa_offset 12
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 6
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 6
 
 
  201 0068 03B0     		add	sp, sp, #12
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  249 0018 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  250              		.loc 1 88 5 discriminator 3
  251 001a 1946     		mov	r1, r3
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 7
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 7
 
 
  252 001c 0420     		movs	r0, #4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  295              		.thumb
  296              		.thumb_func
  298              	main:
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 8
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 8
 
 
  299              	.LFB136:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  126:Core/Src/main.c ****   MX_GPIO_Init();
  319              		.loc 1 126 3
  320 000e FFF7FEFF 		bl	MX_GPIO_Init
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 9
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 9
 
 
  127:Core/Src/main.c ****   /* USER CODE BEGIN 2 */
@@ -499,12 +499,12 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  135:Core/Src/main.c ****   /* USER CODE BEGIN WHILE */
  136:Core/Src/main.c ****   while (1)
  137:Core/Src/main.c ****   {
- 138:Core/Src/main.c ****     GPIOD->ODR ^= 1U<<12   | 1u<<13;
+ 138:Core/Src/main.c ****     GPIOD->ODR ^= 1U<<12   | 1u<<13 | 1<<14 | 1U<<15;
  328              		.loc 1 138 16 discriminator 1
  329 001c 474B     		ldr	r3, .L15+12
  330 001e 5B69     		ldr	r3, [r3, #20]
  331 0020 464A     		ldr	r2, .L15+12
- 332 0022 83F44053 		eor	r3, r3, #12288
+ 332 0022 83F47043 		eor	r3, r3, #61440
  333 0026 5361     		str	r3, [r2, #20]
  139:Core/Src/main.c ****     HAL_Delay(100);
  334              		.loc 1 139 5 discriminator 1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  359 005a 3A4B     		ldr	r3, .L15+20
  360 005c FFF7FEFF 		bl	__aeabi_ddiv
  361 0060 0246     		mov	r2, r0
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 10
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 10
 
 
  362 0062 0B46     		mov	r3, r1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  414 00e8 FFF7FEFF 		bl	sin
  415 00ec 51EC100B 		vmov	r0, r1, d0
  416              		.loc 1 144 14 discriminator 1
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 11
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 11
 
 
  417 00f0 4FF00002 		mov	r2, #0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  150:Core/Src/main.c ****   /* USER CODE END 3 */
  151:Core/Src/main.c **** }
  152:Core/Src/main.c **** 
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 12
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 12
 
 
  153:Core/Src/main.c **** /**
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  509 003e BB68     		ldr	r3, [r7, #8]
  510              	.LBE5:
  511              	.LBB6:
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 13
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 13
 
 
  165:Core/Src/main.c ****   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  549              		.loc 1 181 31
  550 0080 0F23     		movs	r3, #15
  551 0082 FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 14
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 14
 
 
  182:Core/Src/main.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  596              		.global	Error_Handler
  597              		.syntax unified
  598              		.thumb
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 15
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 15
 
 
  599              		.thumb_func
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
   26:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_H
   27:Drivers/CMSIS/Include/cmsis_gcc.h **** 
   28:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ignore some GCC warnings */
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 16
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 16
 
 
   29:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic push
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
   83:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   84:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
   85:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 17
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 17
 
 
   86:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  140:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
  141:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  142:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 18
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 18
 
 
  618              		.loc 2 142 3
@@ -1053,26 +1053,26 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 1
  643              		.file 9 "c:\\arm-tools\\gcc-arm-none-eabi-10.3-2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\
  644              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  645              		.file 11 "<built-in>"
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 19
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:20     .text.ITM_SendValue:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:26     .text.ITM_SendValue:00000000 ITM_SendValue
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:108    .text.ITM_Printf:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:114    .text.ITM_Printf:00000000 ITM_Printf
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:212    .text._write:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:218    .text._write:00000000 _write
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:280    .rodata:00000000 $d
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:292    .text.main:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:298    .text.main:00000000 main
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:465    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:447    .text.main:00000130 $d
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:459    .text.SystemClock_Config:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:601    .text.Error_Handler:00000000 Error_Handler
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:589    .text.SystemClock_Config:000000b4 $d
-C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:595    .text.Error_Handler:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:20     .text.ITM_SendValue:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:26     .text.ITM_SendValue:00000000 ITM_SendValue
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:108    .text.ITM_Printf:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:114    .text.ITM_Printf:00000000 ITM_Printf
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:212    .text._write:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:218    .text._write:00000000 _write
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:280    .rodata:00000000 $d
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:292    .text.main:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:298    .text.main:00000000 main
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:465    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:447    .text.main:00000130 $d
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:459    .text.SystemClock_Config:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:601    .text.Error_Handler:00000000 Error_Handler
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:589    .text.SystemClock_Config:000000b4 $d
+C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s:595    .text.Error_Handler:00000000 $t
                            .group:00000000 wm4.0.6722974c600fbadb77c15f77e4aec733
                            .group:00000000 wm4.stm32f4xx_hal_conf.h.25.35126143d051d0f8985c9784cb41237c
                            .group:00000000 wm4.stm32f4xx.h.38.48e9021f52d9734251440390770110f2
@@ -1113,7 +1113,7 @@ C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s:595    .text.Error_Handler:00000000
                            .group:00000000 wm4.newlib.h.8.7cb3972cd43265932d4782d5eb589854
                            .group:00000000 wm4.ieeefp.h.77.c88535c35f465c05b101960cf0179075
                            .group:00000000 wm4.config.h.224.c701144a7b0518c6ee9b9b5465b79f81
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccXe5XIL.s 			page 20
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccPrIC5L.s 			page 20
 
 
                            .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8

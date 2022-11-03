@@ -196,8 +196,19 @@ clean:
 stflash: all
 	openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c "program $(BUILD_DIR)/$(TARGET).elf verify reset exit"
 #JLINK
-jflash: all
-	JFlashLite -device STM32F407VG -speed 4000 -loadbin $(BUILD_DIR)/$(TARGET).bin 0x8000000 
+# Flash with J-Link
+# Configure device name, everything else should remain the same
+jflash: $(BUILD_DIR)/jflash
+	"C:\Program Files\SEGGER\JLink\JLink.exe" -commanderscript $<
+# Change to yours
+device = STM32F407VG
+# First create a file with all commands
+$(BUILD_DIR)/jflash: $(BUILD_DIR)/$(TARGET).bin
+	@touch $@
+	@echo device $(device) > $@
+	@echo -e si 1'\n'speed 4000 >> $@
+	@echo loadbin $< 0x8000000 >> $@
+	@echo -e r'\n'g'\n'qc >> $@ 
 
 #UART
 uflash: $(BUILD_DIR)/$(TARGET).bin
@@ -205,3 +216,4 @@ uflash: $(BUILD_DIR)/$(TARGET).bin
 	#stm32flash -b 115200 -e 0 -R -i rts,dtr,-rts:rts,-dtr,-rts -v -w $< $(PORT)
 	# Else use this one and manualy set your MCU to bootloader mode
 	stm32flash -b 115200 -e 0 -v -w $< $(PORT)
+	

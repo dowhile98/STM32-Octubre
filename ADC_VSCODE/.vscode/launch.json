@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug STM32F407 STLlink",
+            "name": "STLlink Debug",
             "cwd": "${workspaceFolder}",
             "executable": "./build/ADC_VSCODE.elf",
             "request": "launch",

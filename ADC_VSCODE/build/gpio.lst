@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 1
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccbNlSqP.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 1
   28:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
   29:Core/Src/gpio.c **** /* Configure GPIO                                                             */
   30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 2
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccbNlSqP.s 			page 2
 
 
   31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
@@ -114,20 +114,20 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 1
   66              	.LBE2:
   44:Core/Src/gpio.c **** 
   45:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
-  46:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13, GPIO_PIN_RESET);
+  46:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15, GPIO_PIN_RESET);
   67              		.loc 1 46 3
   68 0030 0022     		movs	r2, #0
-  69 0032 4FF44051 		mov	r1, #12288
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 3
+  69 0032 4FF47041 		mov	r1, #61440
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccbNlSqP.s 			page 3
 
 
   70 0036 0B48     		ldr	r0, .L2+4
   71 0038 FFF7FEFF 		bl	HAL_GPIO_WritePin
   47:Core/Src/gpio.c **** 
   48:Core/Src/gpio.c ****   /*Configure GPIO pins : PD12 PD13 */
-  49:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13;
+  49:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15;
   72              		.loc 1 49 23
-  73 003c 4FF44053 		mov	r3, #12288
+  73 003c 4FF47043 		mov	r3, #61440
   74 0040 7B60     		str	r3, [r7, #4]
   50:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   75              		.loc 1 50 24
@@ -137,9 +137,9 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 1
   78              		.loc 1 51 24
   79 0046 0023     		movs	r3, #0
   80 0048 FB60     		str	r3, [r7, #12]
-  52:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  52:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   81              		.loc 1 52 25
-  82 004a 0023     		movs	r3, #0
+  82 004a 0323     		movs	r3, #3
   83 004c 3B61     		str	r3, [r7, #16]
   53:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
   84              		.loc 1 53 3
@@ -172,14 +172,14 @@ ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 1
  110              		.file 3 "c:\\arm-tools\\gcc-arm-none-eabi-10.3-2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
  111              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
  112              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
-ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s 			page 4
+ARM GAS  C:\Users\jeffr\AppData\Local\Temp\ccbNlSqP.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
-C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s:20     .text.MX_GPIO_Init:00000000 $t
-C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\jeffr\AppData\Local\Temp\ccOYbedj.s:102    .text.MX_GPIO_Init:00000060 $d
+C:\Users\jeffr\AppData\Local\Temp\ccbNlSqP.s:20     .text.MX_GPIO_Init:00000000 $t
+C:\Users\jeffr\AppData\Local\Temp\ccbNlSqP.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\jeffr\AppData\Local\Temp\ccbNlSqP.s:102    .text.MX_GPIO_Init:00000060 $d
                            .group:00000000 wm4.0.6722974c600fbadb77c15f77e4aec733
                            .group:00000000 wm4.stm32f4xx_hal_conf.h.25.35126143d051d0f8985c9784cb41237c
                            .group:00000000 wm4.stm32f4xx.h.38.48e9021f52d9734251440390770110f2
