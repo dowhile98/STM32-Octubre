@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"stm32f4xx.h": "c",
+			"stdint.h": "c",
+			"delay_it.h": "c",
+			"defines.h": "c"
+		}
+	}
+}

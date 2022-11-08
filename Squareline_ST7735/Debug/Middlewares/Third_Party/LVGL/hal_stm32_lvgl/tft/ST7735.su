@@ -1,0 +1,15 @@
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:181:13:ST7735_Reset	8	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:190:13:Send_Data8	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:199:13:ST7735_SendToTFT	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:207:6:Send_DMA_Data16	16	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:250:6:DMA_TransmitComplete_Callback	8	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:265:14:ST7735_SendData16	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:275:6:ST7735_WriteCommand	16	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:281:13:ST7735_WriteData	16	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:287:6:ST7735_SendCommand	16	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:299:6:ST7735_displayInit	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:325:6:LCD_setRotation	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:456:6:LCD_initDisplay	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:515:6:ST7735_setAddrWindow	32	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:538:6:LCD_WritePixel	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/ST7735.c:548:6:LCD_WriteBitmap	24	static

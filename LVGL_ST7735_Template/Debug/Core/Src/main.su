@@ -1,0 +1,8 @@
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/LVGL_ST7735_Template/Drivers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/LVGL_ST7735_Template/Middlewares/Third_Party/LVGL/lvgl/src/lv_api_map.h:35:51:lv_task_handler	8	static
+../Core/Src/main.c:54:5:main	16	static
+../Core/Src/main.c:97:6:GPIO_Init	4	static
+../Core/Src/main.c:120:6:SPI3_Init	4	static
+../Core/Src/main.c:144:6:DMA1_Stream5_init	8	static
+../Core/Src/main.c:168:6:SystemClk_Config	8	static
+../Core/Src/main.c:193:6:flash_cofig	4	static

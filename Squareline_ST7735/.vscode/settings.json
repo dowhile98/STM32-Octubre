@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "delay_it.h": "c",
+        "stm32f4xx.h": "c",
+        "lvgl.h": "c",
+        "defines.h": "c"
+    }
+}

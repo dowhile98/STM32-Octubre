@@ -1,0 +1,4 @@
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/lv_driver.c:33:13:ST7735_SetAddrWindowForLv	32	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/lv_driver.c:58:13:ST7735_flush	32	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/lv_driver.c:70:6:DMA_ST7735_SPI_TransmitComplete_Callback	8	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft/lv_driver.c:77:6:lv_port_disp_init	8	static

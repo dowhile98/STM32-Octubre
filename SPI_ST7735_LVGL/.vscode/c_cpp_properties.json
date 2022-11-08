@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F401RE-NUCLEO",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Middlewares/Third_Party/LVGL/stm32_lvgl_driver/tft"
+            ],
+            "defines": [
+                "_DUBUG",
+                "UNICODE",
+                "_UNICODE",
+                "STM32F401xE"
+            ],
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "${env:ARMGCC_DIR}/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mcpu=cortex-m4",
+                "-mthumb",
+                "-mfloat-abi=hard",
+                "-mfpu=fpv4-sp-d16"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,34 @@
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline_ST7735/Middlewares/Third_Party/LVGL/lvgl/src/core/lv_obj_style_gen.h:493:24:lv_obj_get_style_opa	24	static
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline_ST7735/Middlewares/Third_Party/LVGL/lvgl/src/widgets/lv_slider.h:84:20:lv_slider_set_value	24	static
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline_ST7735/Middlewares/Third_Party/LVGL/lvgl/src/widgets/lv_slider.h:130:23:lv_slider_get_value	16	static
+../Core/ui/ui_helpers.c:8:6:_ui_bar_set_property	24	static
+../Core/ui/ui_helpers.c:14:6:_ui_basic_set_property	24	static
+../Core/ui/ui_helpers.c:23:6:_ui_dropdown_set_property	24	static
+../Core/ui/ui_helpers.c:28:6:_ui_image_set_property	24	static
+../Core/ui/ui_helpers.c:33:6:_ui_label_set_property	24	static
+../Core/ui/ui_helpers.c:39:6:_ui_roller_set_property	24	static
+../Core/ui/ui_helpers.c:45:6:_ui_slider_set_property	24	static
+../Core/ui/ui_helpers.c:52:6:_ui_screen_change	32	static
+../Core/ui/ui_helpers.c:57:6:_ui_arc_increment	24	static
+../Core/ui/ui_helpers.c:63:6:_ui_bar_increment	32	static
+../Core/ui/ui_helpers.c:69:6:_ui_slider_increment	32	static
+../Core/ui/ui_helpers.c:75:6:_ui_flag_modify	24	static
+../Core/ui/ui_helpers.c:84:6:_ui_state_modify	24	static
+../Core/ui/ui_helpers.c:94:6:_ui_opacity_set	16	static
+../Core/ui/ui_helpers.c:99:6:_ui_anim_callback_set_x	16	static
+../Core/ui/ui_helpers.c:104:6:_ui_anim_callback_set_y	16	static
+../Core/ui/ui_helpers.c:109:6:_ui_anim_callback_set_width	16	static
+../Core/ui/ui_helpers.c:114:6:_ui_anim_callback_set_height	16	static
+../Core/ui/ui_helpers.c:119:6:_ui_anim_callback_set_opacity	16	static
+../Core/ui/ui_helpers.c:124:6:_ui_anim_callback_set_image_zoom	16	static
+../Core/ui/ui_helpers.c:129:6:_ui_anim_callback_set_image_angle	16	static
+../Core/ui/ui_helpers.c:135:9:_ui_anim_callback_get_x	16	static
+../Core/ui/ui_helpers.c:140:9:_ui_anim_callback_get_y	16	static
+../Core/ui/ui_helpers.c:145:9:_ui_anim_callback_get_width	16	static
+../Core/ui/ui_helpers.c:150:9:_ui_anim_callback_get_height	16	static
+../Core/ui/ui_helpers.c:155:9:_ui_anim_callback_get_opacity	16	static
+../Core/ui/ui_helpers.c:160:9:_ui_anim_callback_get_image_zoom	16	static
+../Core/ui/ui_helpers.c:165:9:_ui_anim_callback_get_image_angle	16	static
+../Core/ui/ui_helpers.c:170:6:_ui_arc_set_text_value	64	static
+../Core/ui/ui_helpers.c:177:6:_ui_slider_set_text_value	64	static
+../Core/ui/ui_helpers.c:183:6:_ui_checked_set_text_value	24	static

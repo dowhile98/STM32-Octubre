@@ -1,0 +1,15 @@
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/../../misc/lv_color.h:379:24:lv_color_to32	24	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:64:17:compute_key	24	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:71:15:get_cache_item_size	24	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:83:20:next_in_cache	24	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:98:17:iterate_cache	32	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:111:17:find_oldest_item_life	24	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:118:13:free_item	32	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:141:17:kill_oldest_item	24	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:152:17:find_item	24	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:159:20:allocate_item	40	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:236:6:lv_gradient_free_cache	8	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:243:6:lv_gradient_set_cache_size	16	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:252:13:lv_gradient_get	40	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:297:39:lv_gradient_calculate	56	static
+../Middlewares/Third_Party/LVGL/lvgl/src/draw/sw/lv_draw_sw_gradient.c:340:6:lv_gradient_cleanup	16	static

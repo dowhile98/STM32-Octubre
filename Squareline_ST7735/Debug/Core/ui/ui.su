@@ -1,0 +1,5 @@
+d:\trabajo\umaker\cursos\arm - nucleo\stm32-octubre\squareline_st7735\middlewares\third_party\lvgl\lvgl\src\misc\lv_color.h:597:26:lv_color_hex	24	static
+../Core/ui/ui.c:32:6:ui_event_on_button	24	static
+../Core/ui/ui.c:40:6:ui_event_off_button	24	static
+../Core/ui/ui.c:50:6:ui_main_screen_screen_init	16	static
+../Core/ui/ui.c:137:6:ui_init	32	static

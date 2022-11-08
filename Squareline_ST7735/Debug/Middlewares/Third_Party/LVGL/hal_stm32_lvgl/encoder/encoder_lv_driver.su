@@ -1,0 +1,6 @@
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline_ST7735/Drivers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder/encoder_lv_driver.c:44:6:lv_port_indev_init	24	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder/encoder_lv_driver.c:70:13:is_encoder_button_pressed	16	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder/encoder_lv_driver.c:81:13:encoder_io_init	8	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder/encoder_lv_driver.c:143:13:encoder_read	16	static
+../Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder/encoder_lv_driver.c:167:6:encoder_button_callback	24	static
