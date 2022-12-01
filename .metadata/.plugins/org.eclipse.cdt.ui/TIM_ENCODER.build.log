@@ -1,0 +1,10 @@
+22:06:59 **** Incremental Build of configuration Debug for project TIM_ENCODER ****
+make -j8 all 
+arm-none-eabi-size   TIM_ENCODER.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6112	    112	   1584	   7808	   1e80	TIM_ENCODER.elf
+Finished building: default.size.stdout
+ 
+
+22:07:02 Build Finished. 0 errors, 0 warnings. (took 2s.935ms)
+

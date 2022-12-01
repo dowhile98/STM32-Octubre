@@ -1,0 +1,10 @@
+22:08:25 **** Incremental Build of configuration Debug for project HAL_STM32F4 ****
+make -j8 all 
+arm-none-eabi-size   HAL_STM32F4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27648	    120	   4304	  32072	   7d48	HAL_STM32F4.elf
+Finished building: default.size.stdout
+ 
+
+22:08:26 Build Finished. 0 errors, 0 warnings. (took 1s.210ms)
+

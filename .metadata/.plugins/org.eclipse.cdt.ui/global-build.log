@@ -1,0 +1,27 @@
+22:17:22 **** Incremental Build of configuration Debug for project Template ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Noviembre/Template/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Template.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Noviembre\Template\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Template.elf
+ 
+arm-none-eabi-size   Template.elf 
+arm-none-eabi-objdump -h -S  Template.elf  > "Template.list"
+arm-none-eabi-objcopy  -O ihex  Template.elf  "Template.hex"
+arm-none-eabi-objcopy  -O binary  Template.elf  "Template.bin"
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	Template.elf
+Finished building: default.size.stdout
+ 
+Finished building: Template.hex
+Finished building: Template.list
+Finished building: Template.bin
+ 
+ 
+ 
+22:18:10 **** Incremental Build of configuration Debug for project Template ****
+make -j8 all 
+arm-none-eabi-size   Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	Template.elf
+Finished building: default.size.stdout
+ 

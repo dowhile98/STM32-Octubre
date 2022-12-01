@@ -1,0 +1,21 @@
+/*
+ * delay.c
+ *
+ *  Created on: 10 oct. 2022
+ *      Author: jeffr
+ */
+
+#include <delay.h>
+
+void delay_init(void){
+	//1. deshabilitar
+	SysTick_
+	//2. calcular el valor de RELOAD
+
+	//3. activar el conteo
+
+}
+
+void delay_ms(uint32_t delay){
+
+}

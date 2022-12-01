@@ -15,59 +15,50 @@
  *
  ******************************************************************************
  */
-/*Includes -------------------------------------------------------*/
+
 #include <stdint.h>
 #include <stdio.h>
-#include "stm32f4xx.h"
-#include "delay.h"
-#include "defines.h"
-/*Macro defines --------------------------------------------------*/
+#include <string.h>
+#include <defines.h>
 /**
- * @brief para seleccionar el medio de transmision para el printf
- * 0: USART
- * 1: SW0
+ * extern
+ * volatile
+ * static
  */
-#define USE_SW0			1
+typedef struct{
+	volatile uint32_t CR;
+	volatile uint32_t PLLCFGR;
+	volatile uint32_t CFGR;
+}RCC_Typedef_t;
 
+#define RCC		((RCC_Typedef_t *)(0x40023800UL))
 /**
- * GPIOA_ODR_OFFSET = 0x20000
- * 0x40000000U
- * 0x42000000U
- * bit_word_offset = 0x20000 * 32 + 5 * 4
- * bit_word_address = 0x42000000 + 0x400014 = 0x42400014
+ * AND -> &
+ * OR	-> |
+ * XOR -> ^
+ * NOT -> ~
+ * SHIFT LEFT -> <<
+ * SHIFT RIGHT -> >>
+ *
+ * num = 0x1F -> 0b0001 1111
+ * num = num | 0b0100 0000 -> 0b0101 1111
+ * num &=~ (1u<<6);
  */
-#define ODR5 	*((volatile uint32_t*)(0x42400014))
-/*Global variables -----------------------------------------------*/
-
-/*Function prototypes --------------------------------------------*/
-
-
-
 int main(void)
 {
-	RCC->AHB1ENR |= GPIOX_CLOCK(LED);
-	GPIOX_MODER(MODE_OUT, LED);
-	//delay init
-	delay_init();
+//	volatile uint32_t *RCC_CR = (volatile uint32_t*)(0x40023800UL);
+//	volatile uint32_t *RCC_PLLCFGR = (volatile uint32_t *)(0x40023800UL + 0x04);
+//	volatile uint32_t *RCC_CFGR = (volatile uint32_t*)(0x40023800UL + 0x08);
+//	//HSE
+//	*RCC_CR |= 1U<<16 | 1U<<18;
+//	while(!(*RCC_CR & 1<<17));
+	//HSE COMO FUENTE DE DE RELOJ DEL SYSCLK
+//	*RCC_CFGR |= 1U;
+	//
+
+	RCC->CR |= 1U<<16;
+	while(!(RCC->CR & 1U<<17));
+	RCC->CFGR |= 1U;
     /* Loop forever */
-	for(;;){
-		//ODR5 = 1;
-		GPIOX_ODR(LED) = 1;
-		delay_ms(50);
-		//ODR5 = 0;
-		GPIOX_ODR(LED) = 0;
-		delay_ms(50);
-	}
-}
-/*Function definition ------------------------------------------------*/
-/**********************************************************************/
-
-int __io_putchar(int ch){
-#if (USE_SW0 == 1)
-	ITM_SendChar(ch);
-#else
-	//todo
-
-#endif
-	return ch;
+	for(;;);
 }

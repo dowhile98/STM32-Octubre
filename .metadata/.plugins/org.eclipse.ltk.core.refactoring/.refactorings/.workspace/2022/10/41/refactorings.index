@@ -1,0 +1,7 @@
+1665020807560	Delete resource 'Template/Src'
+1665020810898	Delete resource 'Template/Inc'
+1665020981463	Delete resource 'Template/Startup'
+1665022375633	Delete resource 'Template/Drivers/CMSIS/Core'
+1665022443993	Delete resource 'Template/Drivers/CMSIS/Device/ST/STM32F4xx/Source'
+1665191113571	Delete resource 'RCC/Core/Sturtup'
+1665191129717	Delete resource 'RCC/Drivers/CMSIS/Device/Include'

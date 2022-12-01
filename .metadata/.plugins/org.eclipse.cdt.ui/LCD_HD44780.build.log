@@ -1,0 +1,10 @@
+21:43:46 **** Incremental Build of configuration Debug for project LCD_HD44780 ****
+make -j8 all 
+arm-none-eabi-size   LCD_HD44780.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25800	    480	   1592	  27872	   6ce0	LCD_HD44780.elf
+Finished building: default.size.stdout
+ 
+
+21:43:47 Build Finished. 0 errors, 0 warnings. (took 662ms)
+

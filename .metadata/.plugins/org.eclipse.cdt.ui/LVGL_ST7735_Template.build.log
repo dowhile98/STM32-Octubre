@@ -1,0 +1,10 @@
+20:35:59 **** Incremental Build of configuration Debug for project LVGL_ST7735_Template ****
+make -j8 all 
+arm-none-eabi-size   LVGL_ST7735_Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 306972	    248	  60248	 367468	  59b6c	LVGL_ST7735_Template.elf
+Finished building: default.size.stdout
+ 
+
+20:36:37 Build Finished. 0 errors, 0 warnings. (took 38s.549ms)
+

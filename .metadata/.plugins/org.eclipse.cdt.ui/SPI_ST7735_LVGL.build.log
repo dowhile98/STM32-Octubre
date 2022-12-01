@@ -1,0 +1,10 @@
+23:33:01 **** Incremental Build of configuration Debug for project SPI_ST7735_LVGL ****
+make -j8 all 
+arm-none-eabi-size   SPI_ST7735_LVGL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27400	    480	   1616	  29496	   7338	SPI_ST7735_LVGL.elf
+Finished building: default.size.stdout
+ 
+
+23:33:08 Build Finished. 0 errors, 0 warnings. (took 6s.404ms)
+

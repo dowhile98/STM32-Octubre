@@ -1,0 +1,354 @@
+21:21:07 **** Incremental Build of configuration Debug for project Squareline-ST7735 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/ui/ui.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/ui" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/lvgl" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/ui/ui.d" -MT"Core/ui/ui.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/ui/ui.o"
+arm-none-eabi-gcc "../Core/ui/ui_helpers.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/ui" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/lvgl" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/ui/ui_helpers.d" -MT"Core/ui/ui_helpers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/ui/ui_helpers.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/ui" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/hal_stm32_lvgl/encoder" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/lvgl" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Middlewares/Third_Party/LVGL/hal_stm32_lvgl/tft" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/ui/ui.c:6:
+../Core/ui/ui.h:6:20: warning: extra tokens at end of #ifndef directive
+    6 | #ifndef _SQUARELINE-ST7735_UI_H
+      |                    ^
+../Core/ui/ui.h:7:9: warning: ISO C99 requires whitespace after the macro name
+    7 | #define _SQUARELINE-ST7735_UI_H
+      |         ^~~~~~~~~~~
+In file included from ../Core/ui/ui_helpers.c:6:
+../Core/ui/ui_helpers.h:6:20: warning: extra tokens at end of #ifndef directive
+    6 | #ifndef _SQUARELINE-ST7735_UI_HELPERS_H
+      |                    ^
+../Core/ui/ui_helpers.h:7:9: warning: ISO C99 requires whitespace after the macro name
+    7 | #define _SQUARELINE-ST7735_UI_HELPERS_H
+      |         ^~~~~~~~~~~
+In file included from ../Core/ui/ui_helpers.h:9,
+                 from ../Core/ui/ui_helpers.c:6:
+../Core/ui/ui.h:6:20: warning: extra tokens at end of #ifndef directive
+    6 | #ifndef _SQUARELINE-ST7735_UI_H
+      |                    ^
+In file included from ../Core/ui/ui_helpers.c:6:
+../Core/ui/ui_helpers.h:14:27: error: unknown type name 'lv_obj_t'
+   14 | void _ui_bar_set_property(lv_obj_t * target, int id, int val);
+      |                           ^~~~~~~~
+../Core/ui/ui_helpers.h:20:29: error: unknown type name 'lv_obj_t'
+   20 | void _ui_basic_set_property(lv_obj_t * target, int id, int val);
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.h:23:32: error: unknown type name 'lv_obj_t'
+   23 | void _ui_dropdown_set_property(lv_obj_t * target, int id, int val);
+      |                                ^~~~~~~~
+../Core/ui/ui_helpers.h:26:29: error: unknown type name 'lv_obj_t'
+   26 | void _ui_image_set_property(lv_obj_t * target, int id, uint8_t * val);
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.h:26:56: error: unknown type name 'uint8_t'
+   26 | void _ui_image_set_property(lv_obj_t * target, int id, uint8_t * val);
+      |                                                        ^~~~~~~
+../Core/ui/ui_helpers.h:29:29: error: unknown type name 'lv_obj_t'
+   29 | void _ui_label_set_property(lv_obj_t * target, int id, char * val);
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.h:33:30: error: unknown type name 'lv_obj_t'
+   33 | void _ui_roller_set_property(lv_obj_t * target, int id, int val);
+      |                              ^~~~~~~~
+../Core/ui/ui_helpers.h:37:30: error: unknown type name 'lv_obj_t'
+   37 | void _ui_slider_set_property(lv_obj_t * target, int id, int val);
+      |                              ^~~~~~~~
+../Core/ui/ui_helpers.h:39:24: error: unknown type name 'lv_obj_t'
+   39 | void _ui_screen_change(lv_obj_t * target, lv_scr_load_anim_t fademode, int spd, int delay);
+      |                        ^~~~~~~~
+../Core/ui/ui_helpers.h:39:43: error: unknown type name 'lv_scr_load_anim_t'
+   39 | void _ui_screen_change(lv_obj_t * target, lv_scr_load_anim_t fademode, int spd, int delay);
+      |                                           ^~~~~~~~~~~~~~~~~~
+../Core/ui/ui_helpers.h:41:24: error: unknown type name 'lv_obj_t'
+   41 | void _ui_arc_increment(lv_obj_t * target, int val);
+      |                        ^~~~~~~~
+../Core/ui/ui_helpers.h:43:24: error: unknown type name 'lv_obj_t'
+   43 | void _ui_bar_increment(lv_obj_t * target, int val, int anm);
+      |                        ^~~~~~~~
+../Core/ui/ui_helpers.h:45:27: error: unknown type name 'lv_obj_t'
+   45 | void _ui_slider_increment(lv_obj_t * target, int val, int anm);
+      |                           ^~~~~~~~
+../Core/ui/ui_helpers.h:50:22: error: unknown type name 'lv_obj_t'
+   50 | void _ui_flag_modify(lv_obj_t * target, int32_t flag, int value);
+      |                      ^~~~~~~~
+../Core/ui/ui_helpers.h:50:41: error: unknown type name 'int32_t'
+   50 | void _ui_flag_modify(lv_obj_t * target, int32_t flag, int value);
+      |                                         ^~~~~~~
+../Core/ui/ui_helpers.h:55:23: error: unknown type name 'lv_obj_t'
+   55 | void _ui_state_modify(lv_obj_t * target, int32_t state, int value);
+      |                       ^~~~~~~~
+../Core/ui/ui_helpers.h:55:42: error: unknown type name 'int32_t'
+   55 | void _ui_state_modify(lv_obj_t * target, int32_t state, int value);
+      |                                          ^~~~~~~
+../Core/ui/ui_helpers.h:57:22: error: unknown type name 'lv_obj_t'
+   57 | void _ui_opacity_set(lv_obj_t * target, int val);
+      |                      ^~~~~~~~
+../Core/ui/ui_helpers.h:59:30: error: unknown type name 'lv_anim_t'
+   59 | void _ui_anim_callback_set_x(lv_anim_t * a, int32_t v);
+      |                              ^~~~~~~~~
+../Core/ui/ui_helpers.h:59:45: error: unknown type name 'int32_t'
+   59 | void _ui_anim_callback_set_x(lv_anim_t * a, int32_t v);
+      |                                             ^~~~~~~
+../Core/ui/ui_helpers.h:61:30: error: unknown type name 'lv_anim_t'
+   61 | void _ui_anim_callback_set_y(lv_anim_t * a, int32_t v);
+      |                              ^~~~~~~~~
+../Core/ui/ui_helpers.h:61:45: error: unknown type name 'int32_t'
+   61 | void _ui_anim_callback_set_y(lv_anim_t * a, int32_t v);
+      |                                             ^~~~~~~
+../Core/ui/ui_helpers.h:63:34: error: unknown type name 'lv_anim_t'
+   63 | void _ui_anim_callback_set_width(lv_anim_t * a, int32_t v);
+      |                                  ^~~~~~~~~
+../Core/ui/ui_helpers.h:63:49: error: unknown type name 'int32_t'
+   63 | void _ui_anim_callback_set_width(lv_anim_t * a, int32_t v);
+      |                                                 ^~~~~~~
+../Core/ui/ui_helpers.h:65:35: error: unknown type name 'lv_anim_t'
+   65 | void _ui_anim_callback_set_height(lv_anim_t * a, int32_t v);
+      |                                   ^~~~~~~~~
+../Core/ui/ui_helpers.h:65:50: error: unknown type name 'int32_t'
+   65 | void _ui_anim_callback_set_height(lv_anim_t * a, int32_t v);
+      |                                                  ^~~~~~~
+../Core/ui/ui_helpers.h:67:36: error: unknown type name 'lv_anim_t'
+   67 | void _ui_anim_callback_set_opacity(lv_anim_t * a, int32_t v);
+      |                                    ^~~~~~~~~
+../Core/ui/ui_helpers.h:67:51: error: unknown type name 'int32_t'
+   67 | void _ui_anim_callback_set_opacity(lv_anim_t * a, int32_t v);
+      |                                                   ^~~~~~~
+../Core/ui/ui_helpers.h:69:39: error: unknown type name 'lv_anim_t'
+   69 | void _ui_anim_callback_set_image_zoom(lv_anim_t * a, int32_t v);
+      |                                       ^~~~~~~~~
+../Core/ui/ui_helpers.h:69:54: error: unknown type name 'int32_t'
+   69 | void _ui_anim_callback_set_image_zoom(lv_anim_t * a, int32_t v);
+      |                                                      ^~~~~~~
+../Core/ui/ui_helpers.h:71:40: error: unknown type name 'lv_anim_t'
+   71 | void _ui_anim_callback_set_image_angle(lv_anim_t * a, int32_t v);
+      |                                        ^~~~~~~~~
+../Core/ui/ui_helpers.h:71:55: error: unknown type name 'int32_t'
+   71 | void _ui_anim_callback_set_image_angle(lv_anim_t * a, int32_t v);
+      |                                                       ^~~~~~~
+../Core/ui/ui_helpers.h:73:1: error: unknown type name 'int32_t'
+   73 | int32_t _ui_anim_callback_get_x(lv_anim_t * a);
+      | ^~~~~~~
+../Core/ui/ui_helpers.h:73:33: error: unknown type name 'lv_anim_t'
+   73 | int32_t _ui_anim_callback_get_x(lv_anim_t * a);
+      |                                 ^~~~~~~~~
+../Core/ui/ui_helpers.h:75:1: error: unknown type name 'int32_t'
+   75 | int32_t _ui_anim_callback_get_y(lv_anim_t * a);
+      | ^~~~~~~
+../Core/ui/ui_helpers.h:75:33: error: unknown type name 'lv_anim_t'
+   75 | int32_t _ui_anim_callback_get_y(lv_anim_t * a);
+      |                                 ^~~~~~~~~
+../Core/ui/ui_helpers.h:77:1: error: unknown type name 'int32_t'
+   77 | int32_t _ui_anim_callback_get_width(lv_anim_t * a);
+      | ^~~~~~~
+../Core/ui/ui_helpers.h:77:37: error: unknown type name 'lv_anim_t'
+   77 | int32_t _ui_anim_callback_get_width(lv_anim_t * a);
+      |                                     ^~~~~~~~~
+../Core/ui/ui_helpers.h:79:1: error: unknown type name 'int32_t'
+   79 | int32_t _ui_anim_callback_get_height(lv_anim_t * a);
+      | ^~~~~~~
+../Core/ui/ui_helpers.h:79:38: error: unknown type name 'lv_anim_t'
+   79 | int32_t _ui_anim_callback_get_height(lv_anim_t * a);
+      |                                      ^~~~~~~~~
+../Core/ui/ui_helpers.h:81:1: error: unknown type name 'int32_t'
+   81 | int32_t _ui_anim_callback_get_opacity(lv_anim_t * a);
+      | ^~~~~~~
+../Core/ui/ui_helpers.h:81:39: error: unknown type name 'lv_anim_t'
+   81 | int32_t _ui_anim_callback_get_opacity(lv_anim_t * a);
+      |                                       ^~~~~~~~~
+../Core/ui/ui_helpers.h:83:1: error: unknown type name 'int32_t'
+   83 | int32_t _ui_anim_callback_get_image_zoom(lv_anim_t * a);
+      | ^~~~~~~
+../Core/ui/ui_helpers.h:83:42: error: unknown type name 'lv_anim_t'
+   83 | int32_t _ui_anim_callback_get_image_zoom(lv_anim_t * a);
+      |                                          ^~~~~~~~~
+../Core/ui/ui_helpers.h:85:1: error: unknown type name 'int32_t'
+   85 | int32_t _ui_anim_callback_get_image_angle(lv_anim_t * a);
+      | ^~~~~~~
+../Core/ui/ui_helpers.h:85:43: error: unknown type name 'lv_anim_t'
+   85 | int32_t _ui_anim_callback_get_image_angle(lv_anim_t * a);
+      |                                           ^~~~~~~~~
+../Core/ui/ui_helpers.h:87:29: error: unknown type name 'lv_obj_t'
+   87 | void _ui_arc_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix);
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.h:87:45: error: unknown type name 'lv_obj_t'
+   87 | void _ui_arc_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix);
+      |                                             ^~~~~~~~
+../Core/ui/ui_helpers.h:89:32: error: unknown type name 'lv_obj_t'
+   89 | void _ui_slider_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix);
+      |                                ^~~~~~~~
+../Core/ui/ui_helpers.h:89:48: error: unknown type name 'lv_obj_t'
+   89 | void _ui_slider_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix);
+      |                                                ^~~~~~~~
+../Core/ui/ui_helpers.h:91:33: error: unknown type name 'lv_obj_t'
+   91 | void _ui_checked_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * txt_on, char * txt_off);
+      |                                 ^~~~~~~~
+../Core/ui/ui_helpers.h:91:49: error: unknown type name 'lv_obj_t'
+   91 | void _ui_checked_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * txt_on, char * txt_off);
+      |                                                 ^~~~~~~~
+../Core/ui/ui_helpers.c:8:27: error: unknown type name 'lv_obj_t'
+    8 | void _ui_bar_set_property(lv_obj_t * target, int id, int val)
+      |                           ^~~~~~~~
+../Core/ui/ui_helpers.c:14:29: error: unknown type name 'lv_obj_t'
+   14 | void _ui_basic_set_property(lv_obj_t * target, int id, int val)
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.c:23:32: error: unknown type name 'lv_obj_t'
+   23 | void _ui_dropdown_set_property(lv_obj_t * target, int id, int val)
+      |                                ^~~~~~~~
+../Core/ui/ui_helpers.c:28:29: error: unknown type name 'lv_obj_t'
+   28 | void _ui_image_set_property(lv_obj_t * target, int id, uint8_t * val)
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.c:28:56: error: unknown type name 'uint8_t'
+   28 | void _ui_image_set_property(lv_obj_t * target, int id, uint8_t * val)
+      |                                                        ^~~~~~~
+../Core/ui/ui_helpers.c:33:29: error: unknown type name 'lv_obj_t'
+   33 | void _ui_label_set_property(lv_obj_t * target, int id, char * val)
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.c:39:30: error: unknown type name 'lv_obj_t'
+   39 | void _ui_roller_set_property(lv_obj_t * target, int id, int val)
+      |                              ^~~~~~~~
+../Core/ui/ui_helpers.c:45:30: error: unknown type name 'lv_obj_t'
+   45 | void _ui_slider_set_property(lv_obj_t * target, int id, int val)
+      |                              ^~~~~~~~
+../Core/ui/ui_helpers.c:52:24: error: unknown type name 'lv_obj_t'
+   52 | void _ui_screen_change(lv_obj_t * target, lv_scr_load_anim_t fademode, int spd, int delay)
+      |                        ^~~~~~~~
+../Core/ui/ui_helpers.c:52:43: error: unknown type name 'lv_scr_load_anim_t'
+   52 | void _ui_screen_change(lv_obj_t * target, lv_scr_load_anim_t fademode, int spd, int delay)
+      |                                           ^~~~~~~~~~~~~~~~~~
+../Core/ui/ui_helpers.c:57:24: error: unknown type name 'lv_obj_t'
+   57 | void _ui_arc_increment(lv_obj_t * target, int val)
+      |                        ^~~~~~~~
+../Core/ui/ui_helpers.c:63:24: error: unknown type name 'lv_obj_t'
+   63 | void _ui_bar_increment(lv_obj_t * target, int val, int anm)
+      |                        ^~~~~~~~
+../Core/ui/ui_helpers.c:69:27: error: unknown type name 'lv_obj_t'
+   69 | void _ui_slider_increment(lv_obj_t * target, int val, int anm)
+      |                           ^~~~~~~~
+../Core/ui/ui_helpers.c:75:22: error: unknown type name 'lv_obj_t'
+   75 | void _ui_flag_modify(lv_obj_t * target, int32_t flag, int value)
+      |                      ^~~~~~~~
+../Core/ui/ui_helpers.c:75:41: error: unknown type name 'int32_t'
+   75 | void _ui_flag_modify(lv_obj_t * target, int32_t flag, int value)
+      |                                         ^~~~~~~
+../Core/ui/ui_helpers.c:84:23: error: unknown type name 'lv_obj_t'
+   84 | void _ui_state_modify(lv_obj_t * target, int32_t state, int value)
+      |                       ^~~~~~~~
+../Core/ui/ui_helpers.c:84:42: error: unknown type name 'int32_t'
+   84 | void _ui_state_modify(lv_obj_t * target, int32_t state, int value)
+      |                                          ^~~~~~~
+../Core/ui/ui_helpers.c:94:22: error: unknown type name 'lv_obj_t'
+   94 | void _ui_opacity_set(lv_obj_t * target, int val)
+      |                      ^~~~~~~~
+../Core/ui/ui_helpers.c:99:30: error: unknown type name 'lv_anim_t'
+   99 | void _ui_anim_callback_set_x(lv_anim_t * a, int32_t v)
+      |                              ^~~~~~~~~
+../Core/ui/ui_helpers.c:99:45: error: unknown type name 'int32_t'
+   99 | void _ui_anim_callback_set_x(lv_anim_t * a, int32_t v)
+      |                                             ^~~~~~~
+../Core/ui/ui_helpers.c:104:30: error: unknown type name 'lv_anim_t'
+  104 | void _ui_anim_callback_set_y(lv_anim_t * a, int32_t v)
+      |                              ^~~~~~~~~
+../Core/ui/ui_helpers.c:104:45: error: unknown type name 'int32_t'
+  104 | void _ui_anim_callback_set_y(lv_anim_t * a, int32_t v)
+      |                                             ^~~~~~~
+../Core/ui/ui_helpers.c:109:34: error: unknown type name 'lv_anim_t'
+  109 | void _ui_anim_callback_set_width(lv_anim_t * a, int32_t v)
+      |                                  ^~~~~~~~~
+../Core/ui/ui_helpers.c:109:49: error: unknown type name 'int32_t'
+  109 | void _ui_anim_callback_set_width(lv_anim_t * a, int32_t v)
+      |                                                 ^~~~~~~
+../Core/ui/ui_helpers.c:114:35: error: unknown type name 'lv_anim_t'
+  114 | void _ui_anim_callback_set_height(lv_anim_t * a, int32_t v)
+      |                                   ^~~~~~~~~
+../Core/ui/ui_helpers.c:114:50: error: unknown type name 'int32_t'
+  114 | void _ui_anim_callback_set_height(lv_anim_t * a, int32_t v)
+      |                                                  ^~~~~~~
+../Core/ui/ui_helpers.c:119:36: error: unknown type name 'lv_anim_t'
+  119 | void _ui_anim_callback_set_opacity(lv_anim_t * a, int32_t v)
+      |                                    ^~~~~~~~~
+../Core/ui/ui_helpers.c:119:51: error: unknown type name 'int32_t'
+  119 | void _ui_anim_callback_set_opacity(lv_anim_t * a, int32_t v)
+      |                                                   ^~~~~~~
+../Core/ui/ui_helpers.c:124:39: error: unknown type name 'lv_anim_t'
+  124 | void _ui_anim_callback_set_image_zoom(lv_anim_t * a, int32_t v)
+      |                                       ^~~~~~~~~
+../Core/ui/ui_helpers.c:124:54: error: unknown type name 'int32_t'
+  124 | void _ui_anim_callback_set_image_zoom(lv_anim_t * a, int32_t v)
+      |                                                      ^~~~~~~
+../Core/ui/ui_helpers.c:129:40: error: unknown type name 'lv_anim_t'
+  129 | void _ui_anim_callback_set_image_angle(lv_anim_t * a, int32_t v)
+      |                                        ^~~~~~~~~
+../Core/ui/ui_helpers.c:129:55: error: unknown type name 'int32_t'
+  129 | void _ui_anim_callback_set_image_angle(lv_anim_t * a, int32_t v)
+      |                                                       ^~~~~~~
+../Core/ui/ui_helpers.c:135:1: error: unknown type name 'int32_t'
+  135 | int32_t _ui_anim_callback_get_x(lv_anim_t * a)
+      | ^~~~~~~
+../Core/ui/ui_helpers.c:135:33: error: unknown type name 'lv_anim_t'
+  135 | int32_t _ui_anim_callback_get_x(lv_anim_t * a)
+      |                                 ^~~~~~~~~
+../Core/ui/ui_helpers.c:140:1: error: unknown type name 'int32_t'
+  140 | int32_t _ui_anim_callback_get_y(lv_anim_t * a)
+      | ^~~~~~~
+../Core/ui/ui_helpers.c:140:33: error: unknown type name 'lv_anim_t'
+  140 | int32_t _ui_anim_callback_get_y(lv_anim_t * a)
+      |                                 ^~~~~~~~~
+../Core/ui/ui_helpers.c:145:1: error: unknown type name 'int32_t'
+  145 | int32_t _ui_anim_callback_get_width(lv_anim_t * a)
+      | ^~~~~~~
+../Core/ui/ui_helpers.c:145:37: error: unknown type name 'lv_anim_t'
+  145 | int32_t _ui_anim_callback_get_width(lv_anim_t * a)
+      |                                     ^~~~~~~~~
+../Core/ui/ui_helpers.c:150:1: error: unknown type name 'int32_t'
+  150 | int32_t _ui_anim_callback_get_height(lv_anim_t * a)
+      | ^~~~~~~
+../Core/ui/ui_helpers.c:150:38: error: unknown type name 'lv_anim_t'
+  150 | int32_t _ui_anim_callback_get_height(lv_anim_t * a)
+      |                                      ^~~~~~~~~
+../Core/ui/ui_helpers.c:155:1: error: unknown type name 'int32_t'
+  155 | int32_t _ui_anim_callback_get_opacity(lv_anim_t * a)
+      | ^~~~~~~
+../Core/ui/ui_helpers.c:155:39: error: unknown type name 'lv_anim_t'
+  155 | int32_t _ui_anim_callback_get_opacity(lv_anim_t * a)
+      |                                       ^~~~~~~~~
+../Core/ui/ui_helpers.c:160:1: error: unknown type name 'int32_t'
+  160 | int32_t _ui_anim_callback_get_image_zoom(lv_anim_t * a)
+      | ^~~~~~~
+../Core/ui/ui_helpers.c:160:42: error: unknown type name 'lv_anim_t'
+  160 | int32_t _ui_anim_callback_get_image_zoom(lv_anim_t * a)
+      |                                          ^~~~~~~~~
+../Core/ui/ui_helpers.c:165:1: error: unknown type name 'int32_t'
+  165 | int32_t _ui_anim_callback_get_image_angle(lv_anim_t * a)
+      | ^~~~~~~
+../Core/ui/ui_helpers.c:165:43: error: unknown type name 'lv_anim_t'
+  165 | int32_t _ui_anim_callback_get_image_angle(lv_anim_t * a)
+      |                                           ^~~~~~~~~
+../Core/ui/ui_helpers.c:170:29: error: unknown type name 'lv_obj_t'
+  170 | void _ui_arc_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix)
+      |                             ^~~~~~~~
+../Core/ui/ui_helpers.c:170:45: error: unknown type name 'lv_obj_t'
+  170 | void _ui_arc_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix)
+      |                                             ^~~~~~~~
+../Core/ui/ui_helpers.c:177:32: error: unknown type name 'lv_obj_t'
+  177 | void _ui_slider_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix)
+      |                                ^~~~~~~~
+../Core/ui/ui_helpers.c:177:48: error: unknown type name 'lv_obj_t'
+  177 | void _ui_slider_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * prefix, char * postfix)
+      |                                                ^~~~~~~~
+../Core/ui/ui_helpers.c:183:33: error: unknown type name 'lv_obj_t'
+  183 | void _ui_checked_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * txt_on, char * txt_off)
+      |                                 ^~~~~~~~
+../Core/ui/ui_helpers.c:183:49: error: unknown type name 'lv_obj_t'
+  183 | void _ui_checked_set_text_value(lv_obj_t * trg, lv_obj_t * src, char * txt_on, char * txt_off)
+      |                                                 ^~~~~~~~
+make: *** [Core/ui/subdir.mk:22: Core/ui/ui_helpers.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/ui/ui.c:7:
+../Core/ui/ui_helpers.h:6:20: warning: extra tokens at end of #ifndef directive
+    6 | #ifndef _SQUARELINE-ST7735_UI_HELPERS_H
+      |                    ^
+In file included from ../Core/Src/main.c:27:
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/ui/ui.h:6:20: warning: extra tokens at end of #ifndef directive
+    6 | #ifndef _SQUARELINE-ST7735_UI_H
+      |                    ^
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/Squareline-ST7735/Core/ui/ui.h:7:9: warning: ISO C99 requires whitespace after the macro name
+    7 | #define _SQUARELINE-ST7735_UI_H
+      |         ^~~~~~~~~~~
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+21:21:32 Build Failed. 106 errors, 8 warnings. (took 24s.441ms)
+
