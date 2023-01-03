@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="&#x09;volatile uint32_t *RCC_CR = (volatile uint32_t*)(0x40023800UL);"/>
+		<item key="selection" value="if(I2C_MasterReceiveData(I2C1, MPU6050_ADD, &amp;datareg, 1, 2000)){"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="if(I2C_MasterReceiveData(I2C1, MPU6050_ADD, &amp;datareg, 1, 2000)){"/>
+			<item value="TIM2_IRQn"/>
+			<item value="tim6"/>
 			<item value="&#x09;volatile uint32_t *RCC_CR = (volatile uint32_t*)(0x40023800UL);"/>
+		</list>
+		<list key="replacehistory">
 		</list>
 	</section>
 </section>

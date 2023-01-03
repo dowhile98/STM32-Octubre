@@ -1,21 +1,7 @@
-21:59:31 **** Incremental Build of configuration Debug for project TinyFox ****
+23:15:26 **** Incremental Build of configuration Debug for project I2C ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/TinyFox/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/TinyFox/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Octubre/TinyFox/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "TinyFox.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Octubre\TinyFox\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TinyFox.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: TinyFox.elf
- 
-arm-none-eabi-size   TinyFox.elf 
-arm-none-eabi-objdump -h -S  TinyFox.elf  > "TinyFox.list"
+arm-none-eabi-size   I2C.elf 
    text	   data	    bss	    dec	    hex	filename
-  26416	    480	   1632	  28528	   6f70	TinyFox.elf
-Finished building: default.size.stdout
- 
-Finished building: TinyFox.list
- 
-21:59:34 **** Incremental Build of configuration Debug for project TinyFox ****
-make -j8 all 
-arm-none-eabi-size   TinyFox.elf 
-   text	   data	    bss	    dec	    hex	filename
-  26416	    480	   1632	  28528	   6f70	TinyFox.elf
+   5720	    112	   1592	   7424	   1d00	I2C.elf
 Finished building: default.size.stdout
  
